@@ -1,0 +1,167 @@
+# Strip prefixes on bitfield names for all registers.
+
+APB_CTRL:
+  "*":
+    _strip:
+      - APB_CTRL_
+
+APB_SARADC:
+  "*":
+    _strip:
+      - APB_SARADC_
+
+ASSIST_DEBUG:
+  "*":
+    _strip:
+      - ASSIST_DEBUG_
+
+EFUSE:
+  "*":
+    _strip:
+      - EFUSE_
+
+EXTMEM:
+  "*":
+    _strip:
+      - EXTMEM_
+
+GDMA:
+  "*":
+    _strip:
+      - GDMA_
+
+GPIO:
+  "*":
+    _strip:
+      - GPIO_
+  "PIN*":
+    _strip:
+      - "PIN*_"
+  "FUNC*":
+    _strip:
+      - "FUNC*_"
+      - "SIG*_IN_"
+
+GPIO_SD:
+  "*":
+    _strip:
+      - GPIO_
+
+I2C:
+  "*":
+    _strip:
+      - I2C_
+  SCL_HIGH_PERIOD:
+    _strip:
+      - SCL_HIGH_
+  SCL_LOW_PERIOD:
+    _strip:
+      - SCL_LOW_
+  SCL_RSTART_SETUP:
+    _strip:
+      - SCL_RSTART_SETUP_
+  SCL_START_HOLD:
+    _strip:
+      - SCL_START_HOLD_
+  SCL_STOP_HOLD:
+    _strip:
+      - SCL_STOP_HOLD_
+  SCL_STOP_SETUP:
+    _strip:
+      - SCL_STOP_SETUP_
+  SDA_HOLD:
+    _strip:
+      - SDA_HOLD_
+  SDA_SAMPLE:
+    _strip:
+      - SDA_SAMPLE_
+
+I2S:
+  "*":
+    _strip:
+      - I2S_
+
+INTERRUPT_CORE0:
+  "*":
+    _strip:
+      - INTERRUPT_CORE0_
+
+LEDC:
+  "*":
+    _strip:
+      - LEDC_
+
+RMT:
+  "*":
+    _strip:
+      - RMT_
+
+RTCCNTL:
+  "*":
+    _strip:
+      - RTC_CNTL_
+
+RTC_I2C:
+  "*":
+    _strip:
+      - RTC_I2C_
+
+SENSITIVE:
+  "*":
+    _strip:
+      - SENSITIVE_
+
+SPI:
+  "*":
+    _strip:
+      - SPI_
+  "W?":
+    _strip_end:
+      - "?"
+  "W??":
+    _strip_end:
+      - "??"
+
+SPI_MEM:
+  "*":
+    _strip:
+      - SPI_MEM_
+  "W?":
+    _strip_end:
+      - "?"
+  "W??":
+    _strip_end:
+      - "??"
+
+SYSCON:
+  "*":
+    _strip:
+      - SYSCON_
+
+SYSTEM:
+  "*":
+    _strip:
+      - SYSTEM_
+
+SYS_TIMER:
+  "*":
+    _strip:
+      - SYS_TIMER_
+
+TIMG:
+  "*":
+    _strip:
+      - TIMG_
+  "RTCCALICFG*":
+    _strip:
+      - RTC_CALI_
+
+UART:
+  "*":
+    _strip:
+      - UART_
+
+UHCI:
+  "*":
+    _strip:
+      - UHCI_

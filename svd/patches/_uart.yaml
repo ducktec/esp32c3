@@ -1,0 +1,5 @@
+UART:
+  FIFO:
+    _modify:
+        UART_RXFIFO_RD_BYTE:
+          access: read-write

@@ -1,0 +1,203 @@
+_delete:
+  IO_MUX:
+
+_add:
+  IO_MUX:
+    description: IO Multiplexer
+    groupName: IO_MUX
+    baseAddress: "0x60009000"
+    addressBlock:
+      offset: 0x0
+      size: 0xfff
+      usage: "registers"
+    registers:
+      PIN_CTRL:
+        description: "Clock output configuration Register"
+        size: 32
+        addressOffset: 0x0
+        resetValue: 0x000007ff
+        fields:
+          PIN_CTRL_CLK3:
+            description: "Controls I2S output clock to CLK_OUT_out3"
+            bitOffset: 8
+            bitWidth: 4
+          PIN_CTRL_CLK2:
+            description: "Controls I2S output clock to CLK_OUT_out2"
+            bitOffset: 4
+            bitWidth: 4
+          PIN_CTRL_CLK1:
+            description: "Controls I2S output clock to CLK_OUT_out1"
+            bitOffset: 0
+            bitWidth: 4
+      DATE:
+        description: "Clock output configuration Register"
+        size: 32
+        addressOffset: 0xFC
+        resetValue: 0x2006050
+        fields:
+          DATE:
+            description: "Version control register"
+            bitOffset: 0
+            bitWidth: 28
+      GPIO0:
+        displayName: "GPIO0"
+        description: "configures IO_MUX for GPIO0"
+        size: 32
+        addressOffset: 0x4
+        resetValue: 0x00000580
+        fields:
+          FILTER_EN:
+            description: "enables filter for pin input signal"
+            bitOffset: 15
+            bitWidth: 1
+          MCU_SEL:
+            description: "configures IO_MUX function"
+            bitOffset: 12
+            bitWidth: 3
+          FUN_DRV:
+            description: "configures drive strength"
+            bitOffset: 10
+            bitWidth: 2
+          FUN_IE:
+            description: "configures input enable"
+            bitOffset: 9
+            bitWidth: 1
+          FUN_WPU:
+            description: "configures pull up"
+            bitOffset: 8
+            bitWidth: 1
+          FUN_WPD:
+            description: "configures pull down"
+            bitOffset: 7
+            bitWidth: 1
+          MCU_IE:
+            description: "configures input enable during sleep mode"
+            bitOffset: 4
+            bitWidth: 1
+          MCU_WPU:
+            description: "configures pull up during sleep mode"
+            bitOffset: 3
+            bitWidth: 1
+          MCU_WPD:
+            description: "configures pull down during sleep mode"
+            bitOffset: 2
+            bitWidth: 1
+          SLP_SEL:
+            description: "configures sleep mode selection"
+            bitOffset: 1
+            bitWidth: 1
+          MCU_OE:
+            description: "configures output enable during sleep mode"
+            bitOffset: 0
+            bitWidth: 1
+
+IO_MUX:
+  _derive:
+    GPIO1:
+      _from: GPIO0
+      addressOffset: 0x08
+      displayName: "GPIO1"
+      description: "configures IO_MUX for GPIO1"
+    GPIO2:
+      _from: GPIO0
+      addressOffset: 0x0C
+      displayName: "GPIO2"
+      description: "configures IO_MUX for GPIO2"
+    GPIO3:
+      _from: GPIO0
+      addressOffset: 0x10
+      displayName: "GPIO3"
+      description: "configures IO_MUX for GPIO3"
+    GPIO4:
+      _from: GPIO0
+      addressOffset: 0x14
+      displayName: "GPIO4"
+      description: "configures IO_MUX for GPIO4"
+    GPIO5:
+      _from: GPIO0
+      addressOffset: 0x18
+      displayName: "GPIO5"
+      description: "configures IO_MUX for GPIO5"
+    GPIO6:
+      _from: GPIO0
+      addressOffset: 0x1C
+      displayName: "GPIO6"
+      description: "configures IO_MUX for GPIO6"
+    GPIO7:
+      _from: GPIO0
+      addressOffset: 0x20
+      displayName: "GPIO7"
+      description: "configures IO_MUX for GPIO7"
+    GPIO8:
+      _from: GPIO0
+      addressOffset: 0x24
+      displayName: "GPIO8"
+      description: "configures IO_MUX for GPIO8"
+    GPIO9:
+      _from: GPIO0
+      addressOffset: 0x28
+      displayName: "GPIO9"
+      description: "configures IO_MUX for GPIO9"
+    GPIO10:
+      _from: GPIO0
+      addressOffset: 0x2C
+      displayName: "GPIO10"
+      description: "configures IO_MUX for GPIO10"
+    GPIO11:
+      _from: GPIO0
+      addressOffset: 0x30
+      displayName: "GPIO11"
+      description: "configures IO_MUX for GPIO11"
+    GPIO12:
+      _from: GPIO0
+      addressOffset: 0x34
+      displayName: "GPIO12"
+      description: "configures IO_MUX for GPIO12"
+    GPIO13:
+      _from: GPIO0
+      addressOffset: 0x38
+      displayName: "GPIO13"
+      description: "configures IO_MUX for GPIO13"
+    GPIO14:
+      _from: GPIO0
+      addressOffset: 0x3C
+      displayName: "GPIO14"
+      description: "configures IO_MUX for GPIO14"
+    GPIO15:
+      _from: GPIO0
+      addressOffset: 0x40
+      displayName: "GPIO15"
+      description: "configures IO_MUX for GPIO15"
+    GPIO16:
+      _from: GPIO0
+      addressOffset: 0x44
+      displayName: "GPIO16"
+      description: "configures IO_MUX for GPIO16"
+    GPIO17:
+      _from: GPIO0
+      addressOffset: 0x48
+      displayName: "GPIO17"
+      description: "configures IO_MUX for GPIO17"
+    GPIO18:
+      _from: GPIO0
+      addressOffset: 0x4C
+      displayName: "GPIO18"
+      description: "configures IO_MUX for GPIO18"
+    GPIO19:
+      _from: GPIO0
+      addressOffset: 0x50
+      displayName: "GPIO19"
+      description: "configures IO_MUX for GPIO19"
+    GPIO20:
+      _from: GPIO0
+      addressOffset: 0x54
+      displayName: "GPIO20"
+      description: "configures IO_MUX for GPIO20"
+    GPIO21:
+      _from: GPIO0
+      addressOffset: 0x58
+      displayName: "GPIO21"
+      description: "configures IO_MUX for GPIO21"
+
+  _array:
+    GPIO*: {}

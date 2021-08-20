@@ -1,0 +1,104 @@
+# Strip the "_REG" suffix from the name of every register.
+
+"*":
+  _strip_end:
+    - _REG
+
+
+# Strip prefixes on register names for all peripherals.
+
+APB_CTRL:
+  _strip:
+    - APB_CTRL_
+
+APB_SARADC:
+  _strip:
+    - APB_SARADC_
+
+ASSIST_DEBUG:
+  _strip:
+    - ASSIST_DEBUG_
+
+EFUSE:
+  _strip:
+    - EFUSE_
+
+EXTMEM:
+  _strip:
+    - EXTMEM_
+
+GDMA:
+  _strip:
+    - GDMA_
+
+GPIO:
+  _strip:
+    - GPIO_
+
+GPIO_SD:
+  _strip:
+    - GPIO_
+
+I2C:
+  _strip:
+    - I2C_
+
+I2S:
+  _strip:
+    - I2S_
+
+INTERRUPT_CORE0:
+  _strip:
+    - INTERUPT_CORE0_
+
+LEDC:
+  _strip:
+    - LEDC_
+
+RMT:
+  _strip:
+    - RMT_
+
+RTCCNTL:
+  _strip:
+    - RTC_CNTL_
+
+RTC_I2C:
+  _strip:
+    - RTC_I2C_
+
+SENSITIVE:
+  _strip:
+    - SENSITIVE_
+
+SPI:
+  _strip:
+    - SPI_
+
+SPI_MEM:
+  _strip:
+    - SPI_MEM_
+
+SYSCON:
+  _strip:
+    - SYSCON_
+
+SYSTEM:
+  _strip:
+    - SYSTEM_
+
+SYS_TIMER:
+  _strip:
+    - SYS_TIMER_
+
+TIMG:
+  _strip:
+    - TIMG_
+
+UART:
+  _strip:
+    - UART_
+
+UHCI:
+  _strip:
+    - UHCI_

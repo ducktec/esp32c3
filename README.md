@@ -19,6 +19,7 @@ Required dependencies:
 - [form](https://crates.io/crates/form)
 - [svd](https://github.com/stm32-rs/svdtools)
 - [svd2rust](https://github.com/rust-embedded/svd2rust)
+- xmllint
 
 ```
 $ make

@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1.0.xsd" schemaVersion="1.0">
   <name>ESP32C3</name>
   <version>1.0</version>
@@ -10078,7 +10079,10 @@
           </fields>
         </register>
         <register>
-          <dim>26</dim><dimIncrement>0x4</dimIncrement><dimIndex>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25</dimIndex><name>PIN%s</name>
+          <dim>26</dim>
+          <dimIncrement>0x4</dimIncrement>
+          <dimIndex>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25</dimIndex>
+          <name>PIN%s</name>
           <description>GPIO_PIN%s</description>
           <addressOffset>0x74</addressOffset>
           <size>32</size>
@@ -10144,7 +10148,10 @@
           </fields>
         </register>
         <register>
-          <dim>128</dim><dimIncrement>0x4</dimIncrement><dimIndex>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127</dimIndex><name>FUNC%s_IN_SEL_CFG</name>
+          <dim>128</dim>
+          <dimIncrement>0x4</dimIncrement>
+          <dimIndex>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127</dimIndex>
+          <name>FUNC%s_IN_SEL_CFG</name>
           <description>GPIO_FUNC%s_IN_SEL_CFG</description>
           <addressOffset>0x154</addressOffset>
           <size>32</size>
@@ -10171,7 +10178,10 @@
           </fields>
         </register>
         <register>
-          <dim>26</dim><dimIncrement>0x4</dimIncrement><dimIndex>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25</dimIndex><name>FUNC%s_OUT_SEL_CFG</name>
+          <dim>26</dim>
+          <dimIncrement>0x4</dimIncrement>
+          <dimIndex>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25</dimIndex>
+          <name>FUNC%s_OUT_SEL_CFG</name>
           <description>GPIO_FUNC%s_OUT_SEL_CFG</description>
           <addressOffset>0x554</addressOffset>
           <size>32</size>
@@ -32870,25 +32880,143 @@
         <usage>registers</usage>
       </addressBlock>
     </peripheral>
-  <peripheral derivedFrom="UART"><name>UART0</name><baseAddress>0x60000000</baseAddress></peripheral>
-    <peripheral><name>IO_MUX</name><description>IO Multiplexer</description><groupName>IO_MUX</groupName><baseAddress>0x60009000</baseAddress><addressBlock><offset>0</offset><size>4095</size><usage>registers</usage></addressBlock><registers><register><name>PIN_CTRL</name><description>Clock output configuration Register</description><addressOffset>0</addressOffset><size>32</size><resetValue>2047</resetValue><fields><field><name>PIN_CTRL_CLK3</name><description>Controls I2S output clock to CLK_OUT_out3</description><bitOffset>8</bitOffset><bitWidth>4</bitWidth></field>
-            <field><name>PIN_CTRL_CLK2</name><description>Controls I2S output clock to CLK_OUT_out2</description><bitOffset>4</bitOffset><bitWidth>4</bitWidth></field>
-            <field><name>PIN_CTRL_CLK1</name><description>Controls I2S output clock to CLK_OUT_out1</description><bitOffset>0</bitOffset><bitWidth>4</bitWidth></field>
-            </fields></register>
-        <register><name>DATE</name><description>Clock output configuration Register</description><addressOffset>252</addressOffset><size>32</size><resetValue>33579088</resetValue><fields><field><name>DATE</name><description>Version control register</description><bitOffset>0</bitOffset><bitWidth>28</bitWidth></field>
-            </fields></register>
-        <register><dim>22</dim><dimIncrement>0x4</dimIncrement><dimIndex>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21</dimIndex><name>GPIO%s</name><displayName>GPIO0</displayName><description>configures IO_MUX for GPIO%s</description><addressOffset>4</addressOffset><size>32</size><resetValue>1408</resetValue><fields><field><name>FILTER_EN</name><description>enables filter for pin input signal</description><bitOffset>15</bitOffset><bitWidth>1</bitWidth></field>
-            <field><name>MCU_SEL</name><description>configures IO_MUX function</description><bitOffset>12</bitOffset><bitWidth>3</bitWidth></field>
-            <field><name>FUN_DRV</name><description>configures drive strength</description><bitOffset>10</bitOffset><bitWidth>2</bitWidth></field>
-            <field><name>FUN_IE</name><description>configures input enable</description><bitOffset>9</bitOffset><bitWidth>1</bitWidth></field>
-            <field><name>FUN_WPU</name><description>configures pull up</description><bitOffset>8</bitOffset><bitWidth>1</bitWidth></field>
-            <field><name>FUN_WPD</name><description>configures pull down</description><bitOffset>7</bitOffset><bitWidth>1</bitWidth></field>
-            <field><name>MCU_IE</name><description>configures input enable during sleep mode</description><bitOffset>4</bitOffset><bitWidth>1</bitWidth></field>
-            <field><name>MCU_WPU</name><description>configures pull up during sleep mode</description><bitOffset>3</bitOffset><bitWidth>1</bitWidth></field>
-            <field><name>MCU_WPD</name><description>configures pull down during sleep mode</description><bitOffset>2</bitOffset><bitWidth>1</bitWidth></field>
-            <field><name>SLP_SEL</name><description>configures sleep mode selection</description><bitOffset>1</bitOffset><bitWidth>1</bitWidth></field>
-            <field><name>MCU_OE</name><description>configures output enable during sleep mode</description><bitOffset>0</bitOffset><bitWidth>1</bitWidth></field>
-            </fields></register>
-        </registers></peripheral>
-    </peripherals>
+    <peripheral derivedFrom="UART">
+      <name>UART0</name>
+      <baseAddress>0x60000000</baseAddress>
+    </peripheral>
+    <peripheral>
+      <name>IO_MUX</name>
+      <description>IO Multiplexer</description>
+      <groupName>IO_MUX</groupName>
+      <baseAddress>0x60009000</baseAddress>
+      <addressBlock>
+        <offset>0</offset>
+        <size>4095</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>PIN_CTRL</name>
+          <description>Clock output configuration Register</description>
+          <addressOffset>0</addressOffset>
+          <size>32</size>
+          <resetValue>2047</resetValue>
+          <fields>
+            <field>
+              <name>PIN_CTRL_CLK3</name>
+              <description>Controls I2S output clock to CLK_OUT_out3</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>4</bitWidth>
+            </field>
+            <field>
+              <name>PIN_CTRL_CLK2</name>
+              <description>Controls I2S output clock to CLK_OUT_out2</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>4</bitWidth>
+            </field>
+            <field>
+              <name>PIN_CTRL_CLK1</name>
+              <description>Controls I2S output clock to CLK_OUT_out1</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>4</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>DATE</name>
+          <description>Clock output configuration Register</description>
+          <addressOffset>252</addressOffset>
+          <size>32</size>
+          <resetValue>33579088</resetValue>
+          <fields>
+            <field>
+              <name>DATE</name>
+              <description>Version control register</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>28</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <dim>22</dim>
+          <dimIncrement>0x4</dimIncrement>
+          <dimIndex>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21</dimIndex>
+          <name>GPIO%s</name>
+          <displayName>GPIO0</displayName>
+          <description>configures IO_MUX for GPIO%s</description>
+          <addressOffset>4</addressOffset>
+          <size>32</size>
+          <resetValue>1408</resetValue>
+          <fields>
+            <field>
+              <name>FILTER_EN</name>
+              <description>enables filter for pin input signal</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MCU_SEL</name>
+              <description>configures IO_MUX function</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>3</bitWidth>
+            </field>
+            <field>
+              <name>FUN_DRV</name>
+              <description>configures drive strength</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>FUN_IE</name>
+              <description>configures input enable</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>FUN_WPU</name>
+              <description>configures pull up</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>FUN_WPD</name>
+              <description>configures pull down</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MCU_IE</name>
+              <description>configures input enable during sleep mode</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MCU_WPU</name>
+              <description>configures pull up during sleep mode</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MCU_WPD</name>
+              <description>configures pull down during sleep mode</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>SLP_SEL</name>
+              <description>configures sleep mode selection</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MCU_OE</name>
+              <description>configures output enable during sleep mode</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+      </registers>
+    </peripheral>
+  </peripherals>
 </device>

@@ -1,5 +1,5 @@
 OUTPUT=esp32c3.svd
-BASE=esp32c3.base.svd
+BASE=ESP32C3.svd
 
 all: clean patch generate form fmt build
 
@@ -11,7 +11,7 @@ clean:
 patch:
 	rm -f svd/$(OUTPUT)
 	svd patch svd/patches/esp32c3.yaml
-	mv svd/$(BASE).patched svd/$(OUTPUT)
+	mv svd/espressif_svd/svd/$(BASE).patched svd/$(OUTPUT)
 
 generate:
 	svd2rust --target riscv -i svd/$(OUTPUT)

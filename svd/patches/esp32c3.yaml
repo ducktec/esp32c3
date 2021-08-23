@@ -1,2 +1,2 @@
-_svd: "../esp32c3.base.svd"
+_svd: "../espressif_svd/svd/ESP32C3.svd"
 

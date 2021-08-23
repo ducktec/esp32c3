@@ -1,2 +1,6 @@
 _svd: "../espressif_svd/svd/ESP32C3.svd"
 
+_include:
+  - "_uart.yaml"
+  - "_i2c.yaml"
+  - "_gpio.yaml"

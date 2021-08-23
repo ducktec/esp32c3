@@ -11,7 +11,8 @@ clean:
 patch:
 	rm -f svd/$(OUTPUT)
 	svd patch svd/patches/esp32c3.yaml
-	mv svd/espressif_svd/svd/$(BASE).patched svd/$(OUTPUT)
+	xmllint -format svd/espressif_svd/svd/$(BASE).patched > svd/$(OUTPUT)
+	rm  svd/espressif_svd/svd/$(BASE).patched
 
 generate:
 	svd2rust --target riscv -i svd/$(OUTPUT)

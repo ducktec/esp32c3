@@ -12,3 +12,8 @@ Cargo.lock
 
 # MSVC Windows builds of rustc generate these, which store debugging information
 *.pdb
+
+# For this specific repository, the src/ directory should be ignored as it only contains generated
+# code (based on the SVD) that does not need to be committed as it can be deterministically generated
+# from the provided files
+src/

@@ -1,40 +1,102 @@
-#[doc = "Reader of register INTERRUPT_CORE0_BB_INT_MAP"]
-pub type R = crate::R<u32, super::INTERRUPT_CORE0_BB_INT_MAP>;
-#[doc = "Writer for register INTERRUPT_CORE0_BB_INT_MAP"]
-pub type W = crate::W<u32, super::INTERRUPT_CORE0_BB_INT_MAP>;
-#[doc = "Register INTERRUPT_CORE0_BB_INT_MAP `reset()`'s with value 0"]
-impl crate::ResetValue for super::INTERRUPT_CORE0_BB_INT_MAP {
-    type Type = u32;
+#[doc = "Register `INTERRUPT_CORE0_BB_INT_MAP` reader"]
+pub struct R(crate::R<INTERRUPT_CORE0_BB_INT_MAP_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<INTERRUPT_CORE0_BB_INT_MAP_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `INTERRUPT_CORE0_BB_INT_MAP`"]
-pub type INTERRUPT_CORE0_BB_INT_MAP_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `INTERRUPT_CORE0_BB_INT_MAP`"]
-pub struct INTERRUPT_CORE0_BB_INT_MAP_W<'a> {
+impl From<crate::R<INTERRUPT_CORE0_BB_INT_MAP_SPEC>> for R {
+    #[inline(always)]
+    fn from(reader: crate::R<INTERRUPT_CORE0_BB_INT_MAP_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `INTERRUPT_CORE0_BB_INT_MAP` writer"]
+pub struct W(crate::W<INTERRUPT_CORE0_BB_INT_MAP_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<INTERRUPT_CORE0_BB_INT_MAP_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl From<crate::W<INTERRUPT_CORE0_BB_INT_MAP_SPEC>> for W {
+    #[inline(always)]
+    fn from(writer: crate::W<INTERRUPT_CORE0_BB_INT_MAP_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `BB_INT_MAP` reader - "]
+pub struct BB_INT_MAP_R(crate::FieldReader<u8, u8>);
+impl BB_INT_MAP_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        BB_INT_MAP_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for BB_INT_MAP_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `BB_INT_MAP` writer - "]
+pub struct BB_INT_MAP_W<'a> {
     w: &'a mut W,
 }
-impl<'a> INTERRUPT_CORE0_BB_INT_MAP_W<'a> {
+impl<'a> BB_INT_MAP_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x1f) | ((value as u32) & 0x1f);
+        self.w.bits = (self.w.bits & !0x1f) | (value as u32 & 0x1f);
         self.w
     }
 }
 impl R {
     #[doc = "Bits 0:4"]
     #[inline(always)]
-    pub fn interrupt_core0_bb_int_map(&self) -> INTERRUPT_CORE0_BB_INT_MAP_R {
-        INTERRUPT_CORE0_BB_INT_MAP_R::new((self.bits & 0x1f) as u8)
+    pub fn bb_int_map(&self) -> BB_INT_MAP_R {
+        BB_INT_MAP_R::new((self.bits & 0x1f) as u8)
     }
 }
 impl W {
     #[doc = "Bits 0:4"]
     #[inline(always)]
-    pub fn interrupt_core0_bb_int_map(&mut self) -> INTERRUPT_CORE0_BB_INT_MAP_W {
-        INTERRUPT_CORE0_BB_INT_MAP_W { w: self }
+    pub fn bb_int_map(&mut self) -> BB_INT_MAP_W {
+        BB_INT_MAP_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    #[inline(always)]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "INTERRUPT_CORE0_BB_INT_MAP\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [interrupt_core0_bb_int_map](index.html) module"]
+pub struct INTERRUPT_CORE0_BB_INT_MAP_SPEC;
+impl crate::RegisterSpec for INTERRUPT_CORE0_BB_INT_MAP_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [interrupt_core0_bb_int_map::R](R) reader structure"]
+impl crate::Readable for INTERRUPT_CORE0_BB_INT_MAP_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [interrupt_core0_bb_int_map::W](W) writer structure"]
+impl crate::Writable for INTERRUPT_CORE0_BB_INT_MAP_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets INTERRUPT_CORE0_BB_INT_MAP to value 0"]
+impl crate::Resettable for INTERRUPT_CORE0_BB_INT_MAP_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

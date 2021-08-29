@@ -1,18 +1,54 @@
-#[doc = "Reader of register DMA_MISC_CONF"]
-pub type R = crate::R<u32, super::DMA_MISC_CONF>;
-#[doc = "Writer for register DMA_MISC_CONF"]
-pub type W = crate::W<u32, super::DMA_MISC_CONF>;
-#[doc = "Register DMA_MISC_CONF `reset()`'s with value 0"]
-impl crate::ResetValue for super::DMA_MISC_CONF {
-    type Type = u32;
+#[doc = "Register `DMA_MISC_CONF` reader"]
+pub struct R(crate::R<DMA_MISC_CONF_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<DMA_MISC_CONF_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `DMA_CLK_EN`"]
-pub type DMA_CLK_EN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_CLK_EN`"]
+impl From<crate::R<DMA_MISC_CONF_SPEC>> for R {
+    #[inline(always)]
+    fn from(reader: crate::R<DMA_MISC_CONF_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `DMA_MISC_CONF` writer"]
+pub struct W(crate::W<DMA_MISC_CONF_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<DMA_MISC_CONF_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl From<crate::W<DMA_MISC_CONF_SPEC>> for W {
+    #[inline(always)]
+    fn from(writer: crate::W<DMA_MISC_CONF_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `DMA_CLK_EN` reader - "]
+pub struct DMA_CLK_EN_R(crate::FieldReader<bool, bool>);
+impl DMA_CLK_EN_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_CLK_EN_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_CLK_EN_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_CLK_EN` writer - "]
 pub struct DMA_CLK_EN_W<'a> {
     w: &'a mut W,
 }
@@ -30,13 +66,25 @@ impl<'a> DMA_CLK_EN_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | (((value as u32) & 0x01) << 3);
+        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_ARB_PRI_DIS`"]
-pub type DMA_ARB_PRI_DIS_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_ARB_PRI_DIS`"]
+#[doc = "Field `DMA_ARB_PRI_DIS` reader - "]
+pub struct DMA_ARB_PRI_DIS_R(crate::FieldReader<bool, bool>);
+impl DMA_ARB_PRI_DIS_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_ARB_PRI_DIS_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_ARB_PRI_DIS_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_ARB_PRI_DIS` writer - "]
 pub struct DMA_ARB_PRI_DIS_W<'a> {
     w: &'a mut W,
 }
@@ -54,13 +102,25 @@ impl<'a> DMA_ARB_PRI_DIS_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | (((value as u32) & 0x01) << 2);
+        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_AHBM_RST_INTER`"]
-pub type DMA_AHBM_RST_INTER_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_AHBM_RST_INTER`"]
+#[doc = "Field `DMA_AHBM_RST_INTER` reader - "]
+pub struct DMA_AHBM_RST_INTER_R(crate::FieldReader<bool, bool>);
+impl DMA_AHBM_RST_INTER_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_AHBM_RST_INTER_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_AHBM_RST_INTER_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_AHBM_RST_INTER` writer - "]
 pub struct DMA_AHBM_RST_INTER_W<'a> {
     w: &'a mut W,
 }
@@ -78,7 +138,7 @@ impl<'a> DMA_AHBM_RST_INTER_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | ((value as u32) & 0x01);
+        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
         self.w
     }
 }
@@ -114,5 +174,31 @@ impl W {
     #[inline(always)]
     pub fn dma_ahbm_rst_inter(&mut self) -> DMA_AHBM_RST_INTER_W {
         DMA_AHBM_RST_INTER_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    #[inline(always)]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "DMA_MISC_CONF\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dma_misc_conf](index.html) module"]
+pub struct DMA_MISC_CONF_SPEC;
+impl crate::RegisterSpec for DMA_MISC_CONF_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [dma_misc_conf::R](R) reader structure"]
+impl crate::Readable for DMA_MISC_CONF_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [dma_misc_conf::W](W) writer structure"]
+impl crate::Writable for DMA_MISC_CONF_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets DMA_MISC_CONF to value 0"]
+impl crate::Resettable for DMA_MISC_CONF_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

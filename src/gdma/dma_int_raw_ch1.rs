@@ -1,18 +1,54 @@
-#[doc = "Reader of register DMA_INT_RAW_CH1"]
-pub type R = crate::R<u32, super::DMA_INT_RAW_CH1>;
-#[doc = "Writer for register DMA_INT_RAW_CH1"]
-pub type W = crate::W<u32, super::DMA_INT_RAW_CH1>;
-#[doc = "Register DMA_INT_RAW_CH1 `reset()`'s with value 0"]
-impl crate::ResetValue for super::DMA_INT_RAW_CH1 {
-    type Type = u32;
+#[doc = "Register `DMA_INT_RAW_CH1` reader"]
+pub struct R(crate::R<DMA_INT_RAW_CH1_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<DMA_INT_RAW_CH1_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `DMA_OUTFIFO_UDF_CH1_INT_RAW`"]
-pub type DMA_OUTFIFO_UDF_CH1_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_OUTFIFO_UDF_CH1_INT_RAW`"]
+impl From<crate::R<DMA_INT_RAW_CH1_SPEC>> for R {
+    #[inline(always)]
+    fn from(reader: crate::R<DMA_INT_RAW_CH1_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `DMA_INT_RAW_CH1` writer"]
+pub struct W(crate::W<DMA_INT_RAW_CH1_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<DMA_INT_RAW_CH1_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl From<crate::W<DMA_INT_RAW_CH1_SPEC>> for W {
+    #[inline(always)]
+    fn from(writer: crate::W<DMA_INT_RAW_CH1_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `DMA_OUTFIFO_UDF_CH1_INT_RAW` reader - "]
+pub struct DMA_OUTFIFO_UDF_CH1_INT_RAW_R(crate::FieldReader<bool, bool>);
+impl DMA_OUTFIFO_UDF_CH1_INT_RAW_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_OUTFIFO_UDF_CH1_INT_RAW_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_OUTFIFO_UDF_CH1_INT_RAW_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_OUTFIFO_UDF_CH1_INT_RAW` writer - "]
 pub struct DMA_OUTFIFO_UDF_CH1_INT_RAW_W<'a> {
     w: &'a mut W,
 }
@@ -30,13 +66,25 @@ impl<'a> DMA_OUTFIFO_UDF_CH1_INT_RAW_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 12)) | (((value as u32) & 0x01) << 12);
+        self.w.bits = (self.w.bits & !(0x01 << 12)) | ((value as u32 & 0x01) << 12);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_OUTFIFO_OVF_CH1_INT_RAW`"]
-pub type DMA_OUTFIFO_OVF_CH1_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_OUTFIFO_OVF_CH1_INT_RAW`"]
+#[doc = "Field `DMA_OUTFIFO_OVF_CH1_INT_RAW` reader - "]
+pub struct DMA_OUTFIFO_OVF_CH1_INT_RAW_R(crate::FieldReader<bool, bool>);
+impl DMA_OUTFIFO_OVF_CH1_INT_RAW_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_OUTFIFO_OVF_CH1_INT_RAW_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_OUTFIFO_OVF_CH1_INT_RAW_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_OUTFIFO_OVF_CH1_INT_RAW` writer - "]
 pub struct DMA_OUTFIFO_OVF_CH1_INT_RAW_W<'a> {
     w: &'a mut W,
 }
@@ -54,13 +102,25 @@ impl<'a> DMA_OUTFIFO_OVF_CH1_INT_RAW_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 11)) | (((value as u32) & 0x01) << 11);
+        self.w.bits = (self.w.bits & !(0x01 << 11)) | ((value as u32 & 0x01) << 11);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_INFIFO_UDF_CH1_INT_RAW`"]
-pub type DMA_INFIFO_UDF_CH1_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_INFIFO_UDF_CH1_INT_RAW`"]
+#[doc = "Field `DMA_INFIFO_UDF_CH1_INT_RAW` reader - "]
+pub struct DMA_INFIFO_UDF_CH1_INT_RAW_R(crate::FieldReader<bool, bool>);
+impl DMA_INFIFO_UDF_CH1_INT_RAW_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_INFIFO_UDF_CH1_INT_RAW_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_INFIFO_UDF_CH1_INT_RAW_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_INFIFO_UDF_CH1_INT_RAW` writer - "]
 pub struct DMA_INFIFO_UDF_CH1_INT_RAW_W<'a> {
     w: &'a mut W,
 }
@@ -78,13 +138,25 @@ impl<'a> DMA_INFIFO_UDF_CH1_INT_RAW_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 10)) | (((value as u32) & 0x01) << 10);
+        self.w.bits = (self.w.bits & !(0x01 << 10)) | ((value as u32 & 0x01) << 10);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_INFIFO_OVF_CH1_INT_RAW`"]
-pub type DMA_INFIFO_OVF_CH1_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_INFIFO_OVF_CH1_INT_RAW`"]
+#[doc = "Field `DMA_INFIFO_OVF_CH1_INT_RAW` reader - "]
+pub struct DMA_INFIFO_OVF_CH1_INT_RAW_R(crate::FieldReader<bool, bool>);
+impl DMA_INFIFO_OVF_CH1_INT_RAW_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_INFIFO_OVF_CH1_INT_RAW_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_INFIFO_OVF_CH1_INT_RAW_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_INFIFO_OVF_CH1_INT_RAW` writer - "]
 pub struct DMA_INFIFO_OVF_CH1_INT_RAW_W<'a> {
     w: &'a mut W,
 }
@@ -102,13 +174,25 @@ impl<'a> DMA_INFIFO_OVF_CH1_INT_RAW_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 9)) | (((value as u32) & 0x01) << 9);
+        self.w.bits = (self.w.bits & !(0x01 << 9)) | ((value as u32 & 0x01) << 9);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_OUT_TOTAL_EOF_CH1_INT_RAW`"]
-pub type DMA_OUT_TOTAL_EOF_CH1_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_OUT_TOTAL_EOF_CH1_INT_RAW`"]
+#[doc = "Field `DMA_OUT_TOTAL_EOF_CH1_INT_RAW` reader - "]
+pub struct DMA_OUT_TOTAL_EOF_CH1_INT_RAW_R(crate::FieldReader<bool, bool>);
+impl DMA_OUT_TOTAL_EOF_CH1_INT_RAW_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_OUT_TOTAL_EOF_CH1_INT_RAW_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_OUT_TOTAL_EOF_CH1_INT_RAW_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_OUT_TOTAL_EOF_CH1_INT_RAW` writer - "]
 pub struct DMA_OUT_TOTAL_EOF_CH1_INT_RAW_W<'a> {
     w: &'a mut W,
 }
@@ -126,13 +210,25 @@ impl<'a> DMA_OUT_TOTAL_EOF_CH1_INT_RAW_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 8)) | (((value as u32) & 0x01) << 8);
+        self.w.bits = (self.w.bits & !(0x01 << 8)) | ((value as u32 & 0x01) << 8);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_IN_DSCR_EMPTY_CH1_INT_RAW`"]
-pub type DMA_IN_DSCR_EMPTY_CH1_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_IN_DSCR_EMPTY_CH1_INT_RAW`"]
+#[doc = "Field `DMA_IN_DSCR_EMPTY_CH1_INT_RAW` reader - "]
+pub struct DMA_IN_DSCR_EMPTY_CH1_INT_RAW_R(crate::FieldReader<bool, bool>);
+impl DMA_IN_DSCR_EMPTY_CH1_INT_RAW_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_IN_DSCR_EMPTY_CH1_INT_RAW_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_IN_DSCR_EMPTY_CH1_INT_RAW_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_IN_DSCR_EMPTY_CH1_INT_RAW` writer - "]
 pub struct DMA_IN_DSCR_EMPTY_CH1_INT_RAW_W<'a> {
     w: &'a mut W,
 }
@@ -150,13 +246,25 @@ impl<'a> DMA_IN_DSCR_EMPTY_CH1_INT_RAW_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 7)) | (((value as u32) & 0x01) << 7);
+        self.w.bits = (self.w.bits & !(0x01 << 7)) | ((value as u32 & 0x01) << 7);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_OUT_DSCR_ERR_CH1_INT_RAW`"]
-pub type DMA_OUT_DSCR_ERR_CH1_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_OUT_DSCR_ERR_CH1_INT_RAW`"]
+#[doc = "Field `DMA_OUT_DSCR_ERR_CH1_INT_RAW` reader - "]
+pub struct DMA_OUT_DSCR_ERR_CH1_INT_RAW_R(crate::FieldReader<bool, bool>);
+impl DMA_OUT_DSCR_ERR_CH1_INT_RAW_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_OUT_DSCR_ERR_CH1_INT_RAW_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_OUT_DSCR_ERR_CH1_INT_RAW_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_OUT_DSCR_ERR_CH1_INT_RAW` writer - "]
 pub struct DMA_OUT_DSCR_ERR_CH1_INT_RAW_W<'a> {
     w: &'a mut W,
 }
@@ -174,13 +282,25 @@ impl<'a> DMA_OUT_DSCR_ERR_CH1_INT_RAW_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 6)) | (((value as u32) & 0x01) << 6);
+        self.w.bits = (self.w.bits & !(0x01 << 6)) | ((value as u32 & 0x01) << 6);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_IN_DSCR_ERR_CH1_INT_RAW`"]
-pub type DMA_IN_DSCR_ERR_CH1_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_IN_DSCR_ERR_CH1_INT_RAW`"]
+#[doc = "Field `DMA_IN_DSCR_ERR_CH1_INT_RAW` reader - "]
+pub struct DMA_IN_DSCR_ERR_CH1_INT_RAW_R(crate::FieldReader<bool, bool>);
+impl DMA_IN_DSCR_ERR_CH1_INT_RAW_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_IN_DSCR_ERR_CH1_INT_RAW_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_IN_DSCR_ERR_CH1_INT_RAW_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_IN_DSCR_ERR_CH1_INT_RAW` writer - "]
 pub struct DMA_IN_DSCR_ERR_CH1_INT_RAW_W<'a> {
     w: &'a mut W,
 }
@@ -198,13 +318,25 @@ impl<'a> DMA_IN_DSCR_ERR_CH1_INT_RAW_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 5)) | (((value as u32) & 0x01) << 5);
+        self.w.bits = (self.w.bits & !(0x01 << 5)) | ((value as u32 & 0x01) << 5);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_OUT_EOF_CH1_INT_RAW`"]
-pub type DMA_OUT_EOF_CH1_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_OUT_EOF_CH1_INT_RAW`"]
+#[doc = "Field `DMA_OUT_EOF_CH1_INT_RAW` reader - "]
+pub struct DMA_OUT_EOF_CH1_INT_RAW_R(crate::FieldReader<bool, bool>);
+impl DMA_OUT_EOF_CH1_INT_RAW_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_OUT_EOF_CH1_INT_RAW_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_OUT_EOF_CH1_INT_RAW_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_OUT_EOF_CH1_INT_RAW` writer - "]
 pub struct DMA_OUT_EOF_CH1_INT_RAW_W<'a> {
     w: &'a mut W,
 }
@@ -222,13 +354,25 @@ impl<'a> DMA_OUT_EOF_CH1_INT_RAW_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 4)) | (((value as u32) & 0x01) << 4);
+        self.w.bits = (self.w.bits & !(0x01 << 4)) | ((value as u32 & 0x01) << 4);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_OUT_DONE_CH1_INT_RAW`"]
-pub type DMA_OUT_DONE_CH1_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_OUT_DONE_CH1_INT_RAW`"]
+#[doc = "Field `DMA_OUT_DONE_CH1_INT_RAW` reader - "]
+pub struct DMA_OUT_DONE_CH1_INT_RAW_R(crate::FieldReader<bool, bool>);
+impl DMA_OUT_DONE_CH1_INT_RAW_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_OUT_DONE_CH1_INT_RAW_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_OUT_DONE_CH1_INT_RAW_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_OUT_DONE_CH1_INT_RAW` writer - "]
 pub struct DMA_OUT_DONE_CH1_INT_RAW_W<'a> {
     w: &'a mut W,
 }
@@ -246,13 +390,25 @@ impl<'a> DMA_OUT_DONE_CH1_INT_RAW_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | (((value as u32) & 0x01) << 3);
+        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_IN_ERR_EOF_CH1_INT_RAW`"]
-pub type DMA_IN_ERR_EOF_CH1_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_IN_ERR_EOF_CH1_INT_RAW`"]
+#[doc = "Field `DMA_IN_ERR_EOF_CH1_INT_RAW` reader - "]
+pub struct DMA_IN_ERR_EOF_CH1_INT_RAW_R(crate::FieldReader<bool, bool>);
+impl DMA_IN_ERR_EOF_CH1_INT_RAW_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_IN_ERR_EOF_CH1_INT_RAW_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_IN_ERR_EOF_CH1_INT_RAW_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_IN_ERR_EOF_CH1_INT_RAW` writer - "]
 pub struct DMA_IN_ERR_EOF_CH1_INT_RAW_W<'a> {
     w: &'a mut W,
 }
@@ -270,13 +426,25 @@ impl<'a> DMA_IN_ERR_EOF_CH1_INT_RAW_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | (((value as u32) & 0x01) << 2);
+        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_IN_SUC_EOF_CH1_INT_RAW`"]
-pub type DMA_IN_SUC_EOF_CH1_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_IN_SUC_EOF_CH1_INT_RAW`"]
+#[doc = "Field `DMA_IN_SUC_EOF_CH1_INT_RAW` reader - "]
+pub struct DMA_IN_SUC_EOF_CH1_INT_RAW_R(crate::FieldReader<bool, bool>);
+impl DMA_IN_SUC_EOF_CH1_INT_RAW_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_IN_SUC_EOF_CH1_INT_RAW_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_IN_SUC_EOF_CH1_INT_RAW_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_IN_SUC_EOF_CH1_INT_RAW` writer - "]
 pub struct DMA_IN_SUC_EOF_CH1_INT_RAW_W<'a> {
     w: &'a mut W,
 }
@@ -294,13 +462,25 @@ impl<'a> DMA_IN_SUC_EOF_CH1_INT_RAW_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | (((value as u32) & 0x01) << 1);
+        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_IN_DONE_CH1_INT_RAW`"]
-pub type DMA_IN_DONE_CH1_INT_RAW_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_IN_DONE_CH1_INT_RAW`"]
+#[doc = "Field `DMA_IN_DONE_CH1_INT_RAW` reader - "]
+pub struct DMA_IN_DONE_CH1_INT_RAW_R(crate::FieldReader<bool, bool>);
+impl DMA_IN_DONE_CH1_INT_RAW_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_IN_DONE_CH1_INT_RAW_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_IN_DONE_CH1_INT_RAW_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_IN_DONE_CH1_INT_RAW` writer - "]
 pub struct DMA_IN_DONE_CH1_INT_RAW_W<'a> {
     w: &'a mut W,
 }
@@ -318,7 +498,7 @@ impl<'a> DMA_IN_DONE_CH1_INT_RAW_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | ((value as u32) & 0x01);
+        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
         self.w
     }
 }
@@ -454,5 +634,31 @@ impl W {
     #[inline(always)]
     pub fn dma_in_done_ch1_int_raw(&mut self) -> DMA_IN_DONE_CH1_INT_RAW_W {
         DMA_IN_DONE_CH1_INT_RAW_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    #[inline(always)]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "DMA_INT_RAW_CH1\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dma_int_raw_ch1](index.html) module"]
+pub struct DMA_INT_RAW_CH1_SPEC;
+impl crate::RegisterSpec for DMA_INT_RAW_CH1_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [dma_int_raw_ch1::R](R) reader structure"]
+impl crate::Readable for DMA_INT_RAW_CH1_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [dma_int_raw_ch1::W](W) writer structure"]
+impl crate::Writable for DMA_INT_RAW_CH1_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets DMA_INT_RAW_CH1 to value 0"]
+impl crate::Resettable for DMA_INT_RAW_CH1_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

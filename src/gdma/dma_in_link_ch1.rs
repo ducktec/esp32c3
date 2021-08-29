@@ -1,20 +1,68 @@
-#[doc = "Reader of register DMA_IN_LINK_CH1"]
-pub type R = crate::R<u32, super::DMA_IN_LINK_CH1>;
-#[doc = "Writer for register DMA_IN_LINK_CH1"]
-pub type W = crate::W<u32, super::DMA_IN_LINK_CH1>;
-#[doc = "Register DMA_IN_LINK_CH1 `reset()`'s with value 0"]
-impl crate::ResetValue for super::DMA_IN_LINK_CH1 {
-    type Type = u32;
+#[doc = "Register `DMA_IN_LINK_CH1` reader"]
+pub struct R(crate::R<DMA_IN_LINK_CH1_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<DMA_IN_LINK_CH1_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `DMA_INLINK_PARK_CH1`"]
-pub type DMA_INLINK_PARK_CH1_R = crate::R<bool, bool>;
-#[doc = "Reader of field `DMA_INLINK_RESTART_CH1`"]
-pub type DMA_INLINK_RESTART_CH1_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_INLINK_RESTART_CH1`"]
+impl From<crate::R<DMA_IN_LINK_CH1_SPEC>> for R {
+    #[inline(always)]
+    fn from(reader: crate::R<DMA_IN_LINK_CH1_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `DMA_IN_LINK_CH1` writer"]
+pub struct W(crate::W<DMA_IN_LINK_CH1_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<DMA_IN_LINK_CH1_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl From<crate::W<DMA_IN_LINK_CH1_SPEC>> for W {
+    #[inline(always)]
+    fn from(writer: crate::W<DMA_IN_LINK_CH1_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `DMA_INLINK_PARK_CH1` reader - "]
+pub struct DMA_INLINK_PARK_CH1_R(crate::FieldReader<bool, bool>);
+impl DMA_INLINK_PARK_CH1_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_INLINK_PARK_CH1_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_INLINK_PARK_CH1_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_INLINK_RESTART_CH1` reader - "]
+pub struct DMA_INLINK_RESTART_CH1_R(crate::FieldReader<bool, bool>);
+impl DMA_INLINK_RESTART_CH1_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_INLINK_RESTART_CH1_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_INLINK_RESTART_CH1_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_INLINK_RESTART_CH1` writer - "]
 pub struct DMA_INLINK_RESTART_CH1_W<'a> {
     w: &'a mut W,
 }
@@ -32,13 +80,25 @@ impl<'a> DMA_INLINK_RESTART_CH1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 23)) | (((value as u32) & 0x01) << 23);
+        self.w.bits = (self.w.bits & !(0x01 << 23)) | ((value as u32 & 0x01) << 23);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_INLINK_START_CH1`"]
-pub type DMA_INLINK_START_CH1_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_INLINK_START_CH1`"]
+#[doc = "Field `DMA_INLINK_START_CH1` reader - "]
+pub struct DMA_INLINK_START_CH1_R(crate::FieldReader<bool, bool>);
+impl DMA_INLINK_START_CH1_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_INLINK_START_CH1_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_INLINK_START_CH1_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_INLINK_START_CH1` writer - "]
 pub struct DMA_INLINK_START_CH1_W<'a> {
     w: &'a mut W,
 }
@@ -56,13 +116,25 @@ impl<'a> DMA_INLINK_START_CH1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 22)) | (((value as u32) & 0x01) << 22);
+        self.w.bits = (self.w.bits & !(0x01 << 22)) | ((value as u32 & 0x01) << 22);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_INLINK_STOP_CH1`"]
-pub type DMA_INLINK_STOP_CH1_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_INLINK_STOP_CH1`"]
+#[doc = "Field `DMA_INLINK_STOP_CH1` reader - "]
+pub struct DMA_INLINK_STOP_CH1_R(crate::FieldReader<bool, bool>);
+impl DMA_INLINK_STOP_CH1_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_INLINK_STOP_CH1_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_INLINK_STOP_CH1_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_INLINK_STOP_CH1` writer - "]
 pub struct DMA_INLINK_STOP_CH1_W<'a> {
     w: &'a mut W,
 }
@@ -80,13 +152,25 @@ impl<'a> DMA_INLINK_STOP_CH1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 21)) | (((value as u32) & 0x01) << 21);
+        self.w.bits = (self.w.bits & !(0x01 << 21)) | ((value as u32 & 0x01) << 21);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_INLINK_AUTO_RET_CH1`"]
-pub type DMA_INLINK_AUTO_RET_CH1_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMA_INLINK_AUTO_RET_CH1`"]
+#[doc = "Field `DMA_INLINK_AUTO_RET_CH1` reader - "]
+pub struct DMA_INLINK_AUTO_RET_CH1_R(crate::FieldReader<bool, bool>);
+impl DMA_INLINK_AUTO_RET_CH1_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMA_INLINK_AUTO_RET_CH1_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_INLINK_AUTO_RET_CH1_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_INLINK_AUTO_RET_CH1` writer - "]
 pub struct DMA_INLINK_AUTO_RET_CH1_W<'a> {
     w: &'a mut W,
 }
@@ -104,13 +188,25 @@ impl<'a> DMA_INLINK_AUTO_RET_CH1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 20)) | (((value as u32) & 0x01) << 20);
+        self.w.bits = (self.w.bits & !(0x01 << 20)) | ((value as u32 & 0x01) << 20);
         self.w
     }
 }
-#[doc = "Reader of field `DMA_INLINK_ADDR_CH1`"]
-pub type DMA_INLINK_ADDR_CH1_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DMA_INLINK_ADDR_CH1`"]
+#[doc = "Field `DMA_INLINK_ADDR_CH1` reader - "]
+pub struct DMA_INLINK_ADDR_CH1_R(crate::FieldReader<u32, u32>);
+impl DMA_INLINK_ADDR_CH1_R {
+    pub(crate) fn new(bits: u32) -> Self {
+        DMA_INLINK_ADDR_CH1_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMA_INLINK_ADDR_CH1_R {
+    type Target = crate::FieldReader<u32, u32>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMA_INLINK_ADDR_CH1` writer - "]
 pub struct DMA_INLINK_ADDR_CH1_W<'a> {
     w: &'a mut W,
 }
@@ -118,7 +214,7 @@ impl<'a> DMA_INLINK_ADDR_CH1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u32) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x000f_ffff) | ((value as u32) & 0x000f_ffff);
+        self.w.bits = (self.w.bits & !0x000f_ffff) | (value as u32 & 0x000f_ffff);
         self.w
     }
 }
@@ -179,5 +275,31 @@ impl W {
     #[inline(always)]
     pub fn dma_inlink_addr_ch1(&mut self) -> DMA_INLINK_ADDR_CH1_W {
         DMA_INLINK_ADDR_CH1_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    #[inline(always)]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "DMA_IN_LINK_CH1\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dma_in_link_ch1](index.html) module"]
+pub struct DMA_IN_LINK_CH1_SPEC;
+impl crate::RegisterSpec for DMA_IN_LINK_CH1_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [dma_in_link_ch1::R](R) reader structure"]
+impl crate::Readable for DMA_IN_LINK_CH1_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [dma_in_link_ch1::W](W) writer structure"]
+impl crate::Writable for DMA_IN_LINK_CH1_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets DMA_IN_LINK_CH1 to value 0"]
+impl crate::Resettable for DMA_IN_LINK_CH1_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

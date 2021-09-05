@@ -3,3 +3,11 @@ I2C:
     _modify:
       I2C_FIFO_RDATA:
         access: read-write
+  _array:
+    COMD*: 
+      description: Command register array
+      _modify:
+        COMMAND0_DONE:
+          name: COMMAND_DONE
+        COMMAND0:
+          name: COMMAND

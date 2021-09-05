@@ -11391,167 +11391,23 @@
           </fields>
         </register>
         <register>
-          <name>COMD0</name>
-          <description>I2C_COMD0</description>
+          <dim>8</dim>
+          <dimIncrement>0x4</dimIncrement>
+          <dimIndex>0,1,2,3,4,5,6,7</dimIndex>
+          <name>COMD%s</name>
+          <description>I2C_COMD%s</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>COMMAND0_DONE</name>
+              <name>COMMAND_DONE</name>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>COMMAND0</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>14</bitWidth>
-              <access>read-write</access>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>COMD1</name>
-          <description>I2C_COMD1</description>
-          <addressOffset>0x5c</addressOffset>
-          <size>32</size>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>COMMAND1_DONE</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>COMMAND1</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>14</bitWidth>
-              <access>read-write</access>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>COMD2</name>
-          <description>I2C_COMD2</description>
-          <addressOffset>0x60</addressOffset>
-          <size>32</size>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>COMMAND2_DONE</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>COMMAND2</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>14</bitWidth>
-              <access>read-write</access>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>COMD3</name>
-          <description>I2C_COMD3</description>
-          <addressOffset>0x64</addressOffset>
-          <size>32</size>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>COMMAND3_DONE</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>COMMAND3</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>14</bitWidth>
-              <access>read-write</access>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>COMD4</name>
-          <description>I2C_COMD4</description>
-          <addressOffset>0x68</addressOffset>
-          <size>32</size>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>COMMAND4_DONE</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>COMMAND4</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>14</bitWidth>
-              <access>read-write</access>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>COMD5</name>
-          <description>I2C_COMD5</description>
-          <addressOffset>0x6c</addressOffset>
-          <size>32</size>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>COMMAND5_DONE</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>COMMAND5</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>14</bitWidth>
-              <access>read-write</access>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>COMD6</name>
-          <description>I2C_COMD6</description>
-          <addressOffset>0x70</addressOffset>
-          <size>32</size>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>COMMAND6_DONE</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>COMMAND6</name>
-              <bitOffset>0</bitOffset>
-              <bitWidth>14</bitWidth>
-              <access>read-write</access>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>COMD7</name>
-          <description>I2C_COMD7</description>
-          <addressOffset>0x74</addressOffset>
-          <size>32</size>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>COMMAND7_DONE</name>
-              <bitOffset>31</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>COMMAND7</name>
+              <name>COMMAND</name>
               <bitOffset>0</bitOffset>
               <bitWidth>14</bitWidth>
               <access>read-write</access>

@@ -5,6 +5,7 @@ _include:
   - "_i2c.yaml"
   - "_io_mux.yaml"
   - "_gpio.yaml"
+  - "_rmt.yaml"
   - "_rename_registers.yaml"
   - "_rename_bitfields.yaml"
 

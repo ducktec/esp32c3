@@ -1,0 +1,22 @@
+RMT:
+  _add:
+    CH0DATA:
+      description: "Read and write data register for channel 0"
+      size: 32
+      addressOffset: 0x0
+      resetValue: 0x00000000
+    CH1DATA:
+      description: "Read and write data register for channel 1"
+      size: 32
+      addressOffset: 0x4
+      resetValue: 0x00000000
+    CH2DATA:
+      description: "Read and write data register for channel 2"
+      size: 32
+      addressOffset: 0x8
+      resetValue: 0x00000000
+    CH3DATA:
+      description: "Read and write data register for channel 3"
+      size: 32
+      addressOffset: 0xC
+      resetValue: 0x00000000

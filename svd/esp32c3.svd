@@ -17063,6 +17063,34 @@
             </field>
           </fields>
         </register>
+        <register>
+          <name>CH0DATA</name>
+          <description>Read and write data register for channel 0</description>
+          <addressOffset>0</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+        </register>
+        <register>
+          <name>CH1DATA</name>
+          <description>Read and write data register for channel 1</description>
+          <addressOffset>4</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+        </register>
+        <register>
+          <name>CH2DATA</name>
+          <description>Read and write data register for channel 2</description>
+          <addressOffset>8</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+        </register>
+        <register>
+          <name>CH3DATA</name>
+          <description>Read and write data register for channel 3</description>
+          <addressOffset>12</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+        </register>
       </registers>
     </peripheral>
     <peripheral>

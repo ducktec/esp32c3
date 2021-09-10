@@ -1,7 +1,14 @@
 #[doc = r"Register block"]
 #[repr(C)]
 pub struct RegisterBlock {
-    _reserved0: [u8; 0x10],
+    #[doc = "0x00 - Read and write data register for channel 0"]
+    pub ch0data: crate::Reg<ch0data::CH0DATA_SPEC>,
+    #[doc = "0x04 - Read and write data register for channel 1"]
+    pub ch1data: crate::Reg<ch1data::CH1DATA_SPEC>,
+    #[doc = "0x08 - Read and write data register for channel 2"]
+    pub ch2data: crate::Reg<ch2data::CH2DATA_SPEC>,
+    #[doc = "0x0c - Read and write data register for channel 3"]
+    pub ch3data: crate::Reg<ch3data::CH3DATA_SPEC>,
     #[doc = "0x10 - RMT_CH0CONF0"]
     pub ch0conf0: crate::Reg<ch0conf0::CH0CONF0_SPEC>,
     #[doc = "0x14 - RMT_CH1CONF0"]
@@ -52,7 +59,7 @@ pub struct RegisterBlock {
     pub tx_sim: crate::Reg<tx_sim::TX_SIM_SPEC>,
     #[doc = "0x70 - RMT_REF_CNT_RST"]
     pub ref_cnt_rst: crate::Reg<ref_cnt_rst::REF_CNT_RST_SPEC>,
-    _reserved25: [u8; 0x58],
+    _reserved29: [u8; 0x58],
     #[doc = "0xcc - RMT_DATE"]
     pub date: crate::Reg<date::DATE_SPEC>,
 }
@@ -160,3 +167,19 @@ pub mod ref_cnt_rst;
 pub type DATE = crate::Reg<date::DATE_SPEC>;
 #[doc = "RMT_DATE"]
 pub mod date;
+#[doc = "CH0DATA register accessor: an alias for `Reg<CH0DATA_SPEC>`"]
+pub type CH0DATA = crate::Reg<ch0data::CH0DATA_SPEC>;
+#[doc = "Read and write data register for channel 0"]
+pub mod ch0data;
+#[doc = "CH1DATA register accessor: an alias for `Reg<CH1DATA_SPEC>`"]
+pub type CH1DATA = crate::Reg<ch1data::CH1DATA_SPEC>;
+#[doc = "Read and write data register for channel 1"]
+pub mod ch1data;
+#[doc = "CH2DATA register accessor: an alias for `Reg<CH2DATA_SPEC>`"]
+pub type CH2DATA = crate::Reg<ch2data::CH2DATA_SPEC>;
+#[doc = "Read and write data register for channel 2"]
+pub mod ch2data;
+#[doc = "CH3DATA register accessor: an alias for `Reg<CH3DATA_SPEC>`"]
+pub type CH3DATA = crate::Reg<ch3data::CH3DATA_SPEC>;
+#[doc = "Read and write data register for channel 3"]
+pub mod ch3data;

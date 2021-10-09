@@ -34,25 +34,25 @@ impl From<crate::W<CH3_RX_CARRIER_RM_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `CARRIER_HIGH_THRES_CH3` reader - "]
-pub struct CARRIER_HIGH_THRES_CH3_R(crate::FieldReader<u16, u16>);
-impl CARRIER_HIGH_THRES_CH3_R {
+#[doc = "Field `CARRIER_HIGH_THRES` reader - "]
+pub struct CARRIER_HIGH_THRES_R(crate::FieldReader<u16, u16>);
+impl CARRIER_HIGH_THRES_R {
     pub(crate) fn new(bits: u16) -> Self {
-        CARRIER_HIGH_THRES_CH3_R(crate::FieldReader::new(bits))
+        CARRIER_HIGH_THRES_R(crate::FieldReader::new(bits))
     }
 }
-impl core::ops::Deref for CARRIER_HIGH_THRES_CH3_R {
+impl core::ops::Deref for CARRIER_HIGH_THRES_R {
     type Target = crate::FieldReader<u16, u16>;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.0
     }
 }
-#[doc = "Field `CARRIER_HIGH_THRES_CH3` writer - "]
-pub struct CARRIER_HIGH_THRES_CH3_W<'a> {
+#[doc = "Field `CARRIER_HIGH_THRES` writer - "]
+pub struct CARRIER_HIGH_THRES_W<'a> {
     w: &'a mut W,
 }
-impl<'a> CARRIER_HIGH_THRES_CH3_W<'a> {
+impl<'a> CARRIER_HIGH_THRES_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -60,25 +60,25 @@ impl<'a> CARRIER_HIGH_THRES_CH3_W<'a> {
         self.w
     }
 }
-#[doc = "Field `CARRIER_LOW_THRES_CH3` reader - "]
-pub struct CARRIER_LOW_THRES_CH3_R(crate::FieldReader<u16, u16>);
-impl CARRIER_LOW_THRES_CH3_R {
+#[doc = "Field `CARRIER_LOW_THRES` reader - "]
+pub struct CARRIER_LOW_THRES_R(crate::FieldReader<u16, u16>);
+impl CARRIER_LOW_THRES_R {
     pub(crate) fn new(bits: u16) -> Self {
-        CARRIER_LOW_THRES_CH3_R(crate::FieldReader::new(bits))
+        CARRIER_LOW_THRES_R(crate::FieldReader::new(bits))
     }
 }
-impl core::ops::Deref for CARRIER_LOW_THRES_CH3_R {
+impl core::ops::Deref for CARRIER_LOW_THRES_R {
     type Target = crate::FieldReader<u16, u16>;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.0
     }
 }
-#[doc = "Field `CARRIER_LOW_THRES_CH3` writer - "]
-pub struct CARRIER_LOW_THRES_CH3_W<'a> {
+#[doc = "Field `CARRIER_LOW_THRES` writer - "]
+pub struct CARRIER_LOW_THRES_W<'a> {
     w: &'a mut W,
 }
-impl<'a> CARRIER_LOW_THRES_CH3_W<'a> {
+impl<'a> CARRIER_LOW_THRES_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -89,25 +89,25 @@ impl<'a> CARRIER_LOW_THRES_CH3_W<'a> {
 impl R {
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    pub fn carrier_high_thres_ch3(&self) -> CARRIER_HIGH_THRES_CH3_R {
-        CARRIER_HIGH_THRES_CH3_R::new(((self.bits >> 16) & 0xffff) as u16)
+    pub fn carrier_high_thres(&self) -> CARRIER_HIGH_THRES_R {
+        CARRIER_HIGH_THRES_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    pub fn carrier_low_thres_ch3(&self) -> CARRIER_LOW_THRES_CH3_R {
-        CARRIER_LOW_THRES_CH3_R::new((self.bits & 0xffff) as u16)
+    pub fn carrier_low_thres(&self) -> CARRIER_LOW_THRES_R {
+        CARRIER_LOW_THRES_R::new((self.bits & 0xffff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    pub fn carrier_high_thres_ch3(&mut self) -> CARRIER_HIGH_THRES_CH3_W {
-        CARRIER_HIGH_THRES_CH3_W { w: self }
+    pub fn carrier_high_thres(&mut self) -> CARRIER_HIGH_THRES_W {
+        CARRIER_HIGH_THRES_W { w: self }
     }
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    pub fn carrier_low_thres_ch3(&mut self) -> CARRIER_LOW_THRES_CH3_W {
-        CARRIER_LOW_THRES_CH3_W { w: self }
+    pub fn carrier_low_thres(&mut self) -> CARRIER_LOW_THRES_W {
+        CARRIER_LOW_THRES_W { w: self }
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

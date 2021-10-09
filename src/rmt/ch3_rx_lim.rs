@@ -34,25 +34,25 @@ impl From<crate::W<CH3_RX_LIM_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Field `RX_LIM_CH3` reader - "]
-pub struct RX_LIM_CH3_R(crate::FieldReader<u16, u16>);
-impl RX_LIM_CH3_R {
+#[doc = "Field `RX_LIM` reader - "]
+pub struct RX_LIM_R(crate::FieldReader<u16, u16>);
+impl RX_LIM_R {
     pub(crate) fn new(bits: u16) -> Self {
-        RX_LIM_CH3_R(crate::FieldReader::new(bits))
+        RX_LIM_R(crate::FieldReader::new(bits))
     }
 }
-impl core::ops::Deref for RX_LIM_CH3_R {
+impl core::ops::Deref for RX_LIM_R {
     type Target = crate::FieldReader<u16, u16>;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         &self.0
     }
 }
-#[doc = "Field `RX_LIM_CH3` writer - "]
-pub struct RX_LIM_CH3_W<'a> {
+#[doc = "Field `RX_LIM` writer - "]
+pub struct RX_LIM_W<'a> {
     w: &'a mut W,
 }
-impl<'a> RX_LIM_CH3_W<'a> {
+impl<'a> RX_LIM_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub unsafe fn bits(self, value: u16) -> &'a mut W {
@@ -63,15 +63,15 @@ impl<'a> RX_LIM_CH3_W<'a> {
 impl R {
     #[doc = "Bits 0:8"]
     #[inline(always)]
-    pub fn rx_lim_ch3(&self) -> RX_LIM_CH3_R {
-        RX_LIM_CH3_R::new((self.bits & 0x01ff) as u16)
+    pub fn rx_lim(&self) -> RX_LIM_R {
+        RX_LIM_R::new((self.bits & 0x01ff) as u16)
     }
 }
 impl W {
     #[doc = "Bits 0:8"]
     #[inline(always)]
-    pub fn rx_lim_ch3(&mut self) -> RX_LIM_CH3_W {
-        RX_LIM_CH3_W { w: self }
+    pub fn rx_lim(&mut self) -> RX_LIM_W {
+        RX_LIM_W { w: self }
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]

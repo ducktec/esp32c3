@@ -15781,91 +15781,91 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CONF_UPDATE_CH0</name>
+              <name>CONF_UPDATE</name>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>AFIFO_RST_CH0</name>
+              <name>AFIFO_RST</name>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>CARRIER_OUT_LV_CH0</name>
+              <name>CARRIER_OUT_LV</name>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>CARRIER_EN_CH0</name>
+              <name>CARRIER_EN</name>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>CARRIER_EFF_EN_CH0</name>
+              <name>CARRIER_EFF_EN</name>
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>MEM_SIZE_CH0</name>
+              <name>MEM_SIZE</name>
               <bitOffset>16</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>DIV_CNT_CH0</name>
+              <name>DIV_CNT</name>
               <bitOffset>8</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>TX_STOP_CH0</name>
+              <name>TX_STOP</name>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>IDLE_OUT_EN_CH0</name>
+              <name>IDLE_OUT_EN</name>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>IDLE_OUT_LV_CH0</name>
+              <name>IDLE_OUT_LV</name>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>MEM_TX_WRAP_EN_CH0</name>
+              <name>MEM_TX_WRAP_EN</name>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>TX_CONTI_MODE_CH0</name>
+              <name>TX_CONTI_MODE</name>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>APB_MEM_RST_CH0</name>
+              <name>APB_MEM_RST</name>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>MEM_RD_RST_CH0</name>
+              <name>MEM_RD_RST</name>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>TX_START_CH0</name>
+              <name>TX_START</name>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
@@ -15880,91 +15880,91 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CONF_UPDATE_CH1</name>
+              <name>CONF_UPDATE</name>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>AFIFO_RST_CH1</name>
+              <name>AFIFO_RST</name>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>CARRIER_OUT_LV_CH1</name>
+              <name>CARRIER_OUT_LV</name>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>CARRIER_EN_CH1</name>
+              <name>CARRIER_EN</name>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>CARRIER_EFF_EN_CH1</name>
+              <name>CARRIER_EFF_EN</name>
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>MEM_SIZE_CH1</name>
+              <name>MEM_SIZE</name>
               <bitOffset>16</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>DIV_CNT_CH1</name>
+              <name>DIV_CNT</name>
               <bitOffset>8</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>TX_STOP_CH1</name>
+              <name>TX_STOP</name>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>IDLE_OUT_EN_CH1</name>
+              <name>IDLE_OUT_EN</name>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>IDLE_OUT_LV_CH1</name>
+              <name>IDLE_OUT_LV</name>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>MEM_TX_WRAP_EN_CH1</name>
+              <name>MEM_TX_WRAP_EN</name>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>TX_CONTI_MODE_CH1</name>
+              <name>TX_CONTI_MODE</name>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>APB_MEM_RST_CH1</name>
+              <name>APB_MEM_RST</name>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>MEM_RD_RST_CH1</name>
+              <name>MEM_RD_RST</name>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>TX_START_CH1</name>
+              <name>TX_START</name>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
@@ -15979,31 +15979,31 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CARRIER_OUT_LV_CH2</name>
+              <name>CARRIER_OUT_LV</name>
               <bitOffset>29</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>CARRIER_EN_CH2</name>
+              <name>CARRIER_EN</name>
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>MEM_SIZE_CH2</name>
+              <name>MEM_SIZE</name>
               <bitOffset>23</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>IDLE_THRES_CH2</name>
+              <name>IDLE_THRES</name>
               <bitOffset>8</bitOffset>
               <bitWidth>15</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>DIV_CNT_CH2</name>
+              <name>DIV_CNT</name>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
@@ -16018,55 +16018,55 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CONF_UPDATE_CH2</name>
+              <name>CONF_UPDATE</name>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>AFIFO_RST_CH2</name>
+              <name>AFIFO_RST</name>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>MEM_RX_WRAP_EN_CH2</name>
+              <name>MEM_RX_WRAP_EN</name>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>RX_FILTER_THRES_CH2</name>
+              <name>RX_FILTER_THRES</name>
               <bitOffset>5</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>RX_FILTER_EN_CH2</name>
+              <name>RX_FILTER_EN</name>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>MEM_OWNER_CH2</name>
+              <name>MEM_OWNER</name>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>APB_MEM_RST_CH2</name>
+              <name>APB_MEM_RST</name>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>MEM_WR_RST_CH2</name>
+              <name>MEM_WR_RST</name>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>RX_EN_CH2</name>
+              <name>RX_EN</name>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
@@ -16081,31 +16081,31 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CARRIER_OUT_LV_CH3</name>
+              <name>CARRIER_OUT_LV</name>
               <bitOffset>29</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>CARRIER_EN_CH3</name>
+              <name>CARRIER_EN</name>
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>MEM_SIZE_CH3</name>
+              <name>MEM_SIZE</name>
               <bitOffset>23</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>IDLE_THRES_CH3</name>
+              <name>IDLE_THRES</name>
               <bitOffset>8</bitOffset>
               <bitWidth>15</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>DIV_CNT_CH3</name>
+              <name>DIV_CNT</name>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
@@ -16120,55 +16120,55 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CONF_UPDATE_CH3</name>
+              <name>CONF_UPDATE</name>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>AFIFO_RST_CH3</name>
+              <name>AFIFO_RST</name>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>MEM_RX_WRAP_EN_CH3</name>
+              <name>MEM_RX_WRAP_EN</name>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>RX_FILTER_THRES_CH3</name>
+              <name>RX_FILTER_THRES</name>
               <bitOffset>5</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>RX_FILTER_EN_CH3</name>
+              <name>RX_FILTER_EN</name>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>MEM_OWNER_CH3</name>
+              <name>MEM_OWNER</name>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>APB_MEM_RST_CH3</name>
+              <name>APB_MEM_RST</name>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>MEM_WR_RST_CH3</name>
+              <name>MEM_WR_RST</name>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>RX_EN_CH3</name>
+              <name>RX_EN</name>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
@@ -16183,43 +16183,43 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>APB_MEM_RADDR_CH0</name>
+              <name>APB_MEM_RADDR</name>
               <bitOffset>24</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>APB_MEM_WR_ERR_CH0</name>
+              <name>APB_MEM_WR_ERR</name>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>MEM_EMPTY_CH0</name>
+              <name>MEM_EMPTY</name>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>APB_MEM_RD_ERR_CH0</name>
+              <name>APB_MEM_RD_ERR</name>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>APB_MEM_WADDR_CH0</name>
+              <name>APB_MEM_WADDR</name>
               <bitOffset>12</bitOffset>
               <bitWidth>9</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>STATE_CH0</name>
+              <name>STATE</name>
               <bitOffset>9</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>MEM_RADDR_EX_CH0</name>
+              <name>MEM_RADDR_EX</name>
               <bitOffset>0</bitOffset>
               <bitWidth>9</bitWidth>
               <access>read-only</access>
@@ -16234,43 +16234,43 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>APB_MEM_RADDR_CH1</name>
+              <name>APB_MEM_RADDR</name>
               <bitOffset>24</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>APB_MEM_WR_ERR_CH1</name>
+              <name>APB_MEM_WR_ERR</name>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>MEM_EMPTY_CH1</name>
+              <name>MEM_EMPTY</name>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>APB_MEM_RD_ERR_CH1</name>
+              <name>APB_MEM_RD_ERR</name>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>APB_MEM_WADDR_CH1</name>
+              <name>APB_MEM_WADDR</name>
               <bitOffset>12</bitOffset>
               <bitWidth>9</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>STATE_CH1</name>
+              <name>STATE</name>
               <bitOffset>9</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>MEM_RADDR_EX_CH1</name>
+              <name>MEM_RADDR_EX</name>
               <bitOffset>0</bitOffset>
               <bitWidth>9</bitWidth>
               <access>read-only</access>
@@ -16285,37 +16285,37 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>APB_MEM_RD_ERR_CH2</name>
+              <name>APB_MEM_RD_ERR</name>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>MEM_FULL_CH2</name>
+              <name>MEM_FULL</name>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>MEM_OWNER_ERR_CH2</name>
+              <name>MEM_OWNER_ERR</name>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>STATE_CH2</name>
+              <name>STATE</name>
               <bitOffset>22</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>APB_MEM_RADDR_CH2</name>
+              <name>APB_MEM_RADDR</name>
               <bitOffset>12</bitOffset>
               <bitWidth>9</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>MEM_WADDR_EX_CH2</name>
+              <name>MEM_WADDR_EX</name>
               <bitOffset>0</bitOffset>
               <bitWidth>9</bitWidth>
               <access>read-only</access>
@@ -16330,37 +16330,37 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>APB_MEM_RD_ERR_CH3</name>
+              <name>APB_MEM_RD_ERR</name>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>MEM_FULL_CH3</name>
+              <name>MEM_FULL</name>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>MEM_OWNER_ERR_CH3</name>
+              <name>MEM_OWNER_ERR</name>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>STATE_CH3</name>
+              <name>STATE</name>
               <bitOffset>22</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>APB_MEM_RADDR_CH3</name>
+              <name>APB_MEM_RADDR</name>
               <bitOffset>12</bitOffset>
               <bitWidth>9</bitWidth>
               <access>read-only</access>
             </field>
             <field>
-              <name>MEM_WADDR_EX_CH3</name>
+              <name>MEM_WADDR_EX</name>
               <bitOffset>0</bitOffset>
               <bitWidth>9</bitWidth>
               <access>read-only</access>
@@ -16747,13 +16747,13 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CARRIER_HIGH_CH0</name>
+              <name>CARRIER_HIGH</name>
               <bitOffset>16</bitOffset>
               <bitWidth>16</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>CARRIER_LOW_CH0</name>
+              <name>CARRIER_LOW</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
               <access>read-write</access>
@@ -16768,13 +16768,13 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CARRIER_HIGH_CH1</name>
+              <name>CARRIER_HIGH</name>
               <bitOffset>16</bitOffset>
               <bitWidth>16</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>CARRIER_LOW_CH1</name>
+              <name>CARRIER_LOW</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
               <access>read-write</access>
@@ -16789,13 +16789,13 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CARRIER_HIGH_THRES_CH2</name>
+              <name>CARRIER_HIGH_THRES</name>
               <bitOffset>16</bitOffset>
               <bitWidth>16</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>CARRIER_LOW_THRES_CH2</name>
+              <name>CARRIER_LOW_THRES</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
               <access>read-write</access>
@@ -16810,13 +16810,13 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CARRIER_HIGH_THRES_CH3</name>
+              <name>CARRIER_HIGH_THRES</name>
               <bitOffset>16</bitOffset>
               <bitWidth>16</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>CARRIER_LOW_THRES_CH3</name>
+              <name>CARRIER_LOW_THRES</name>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
               <access>read-write</access>
@@ -16831,25 +16831,25 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>LOOP_COUNT_RESET_CH0</name>
+              <name>LOOP_COUNT_RESET</name>
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>TX_LOOP_CNT_EN_CH0</name>
+              <name>TX_LOOP_CNT_EN</name>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>TX_LOOP_NUM_CH0</name>
+              <name>TX_LOOP_NUM</name>
               <bitOffset>9</bitOffset>
               <bitWidth>10</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>TX_LIM_CH0</name>
+              <name>TX_LIM</name>
               <bitOffset>0</bitOffset>
               <bitWidth>9</bitWidth>
               <access>read-write</access>
@@ -16864,25 +16864,25 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>LOOP_COUNT_RESET_CH1</name>
+              <name>LOOP_COUNT_RESET</name>
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
               <access>write-only</access>
             </field>
             <field>
-              <name>TX_LOOP_CNT_EN_CH1</name>
+              <name>TX_LOOP_CNT_EN</name>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>TX_LOOP_NUM_CH1</name>
+              <name>TX_LOOP_NUM</name>
               <bitOffset>9</bitOffset>
               <bitWidth>10</bitWidth>
               <access>read-write</access>
             </field>
             <field>
-              <name>TX_LIM_CH1</name>
+              <name>TX_LIM</name>
               <bitOffset>0</bitOffset>
               <bitWidth>9</bitWidth>
               <access>read-write</access>
@@ -16897,7 +16897,7 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>RX_LIM_CH2</name>
+              <name>RX_LIM</name>
               <bitOffset>0</bitOffset>
               <bitWidth>9</bitWidth>
               <access>read-write</access>
@@ -16912,7 +16912,7 @@
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>RX_LIM_CH3</name>
+              <name>RX_LIM</name>
               <bitOffset>0</bitOffset>
               <bitWidth>9</bitWidth>
               <access>read-write</access>

@@ -12665,15 +12665,6 @@
       </addressBlock>
     </peripheral>
     <peripheral>
-      <name>INTERRUPT</name>
-      <baseAddress>0x600c2000</baseAddress>
-      <addressBlock>
-        <offset>0</offset>
-        <size>0x00000000</size>
-        <usage>registers</usage>
-      </addressBlock>
-    </peripheral>
-    <peripheral>
       <name>INTERRUPT_CORE0</name>
       <baseAddress>0x0</baseAddress>
       <addressBlock>
@@ -12683,7 +12674,7 @@
       </addressBlock>
       <registers>
         <register>
-          <name>INTERRUPT_CORE0_MAC_INTR_MAP</name>
+          <name>MAC_INTR_MAP</name>
           <description>INTERRUPT_CORE0_MAC_INTR_MAP</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
@@ -12698,7 +12689,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_MAC_NMI_MAP</name>
+          <name>MAC_NMI_MAP</name>
           <description>INTERRUPT_CORE0_MAC_NMI_MAP</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
@@ -12713,7 +12704,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_PWR_INTR_MAP</name>
+          <name>PWR_INTR_MAP</name>
           <description>INTERRUPT_CORE0_PWR_INTR_MAP</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
@@ -12728,7 +12719,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_BB_INT_MAP</name>
+          <name>BB_INT_MAP</name>
           <description>INTERRUPT_CORE0_BB_INT_MAP</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
@@ -12743,7 +12734,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_BT_MAC_INT_MAP</name>
+          <name>BT_MAC_INT_MAP</name>
           <description>INTERRUPT_CORE0_BT_MAC_INT_MAP</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
@@ -12758,7 +12749,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_BT_BB_INT_MAP</name>
+          <name>BT_BB_INT_MAP</name>
           <description>INTERRUPT_CORE0_BT_BB_INT_MAP</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
@@ -12773,7 +12764,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_BT_BB_NMI_MAP</name>
+          <name>BT_BB_NMI_MAP</name>
           <description>INTERRUPT_CORE0_BT_BB_NMI_MAP</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
@@ -12788,7 +12779,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_RWBT_IRQ_MAP</name>
+          <name>RWBT_IRQ_MAP</name>
           <description>INTERRUPT_CORE0_RWBT_IRQ_MAP</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
@@ -12803,7 +12794,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_RWBLE_IRQ_MAP</name>
+          <name>RWBLE_IRQ_MAP</name>
           <description>INTERRUPT_CORE0_RWBLE_IRQ_MAP</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
@@ -12818,7 +12809,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_RWBT_NMI_MAP</name>
+          <name>RWBT_NMI_MAP</name>
           <description>INTERRUPT_CORE0_RWBT_NMI_MAP</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
@@ -12833,7 +12824,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_RWBLE_NMI_MAP</name>
+          <name>RWBLE_NMI_MAP</name>
           <description>INTERRUPT_CORE0_RWBLE_NMI_MAP</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
@@ -12848,7 +12839,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_I2C_MST_INT_MAP</name>
+          <name>I2C_MST_INT_MAP</name>
           <description>INTERRUPT_CORE0_I2C_MST_INT_MAP</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
@@ -12863,7 +12854,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_SLC0_INTR_MAP</name>
+          <name>SLC0_INTR_MAP</name>
           <description>INTERRUPT_CORE0_SLC0_INTR_MAP</description>
           <addressOffset>0x30</addressOffset>
           <size>32</size>
@@ -12878,7 +12869,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_SLC1_INTR_MAP</name>
+          <name>SLC1_INTR_MAP</name>
           <description>INTERRUPT_CORE0_SLC1_INTR_MAP</description>
           <addressOffset>0x34</addressOffset>
           <size>32</size>
@@ -12893,7 +12884,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_APB_CTRL_INTR_MAP</name>
+          <name>APB_CTRL_INTR_MAP</name>
           <description>INTERRUPT_CORE0_APB_CTRL_INTR_MAP</description>
           <addressOffset>0x38</addressOffset>
           <size>32</size>
@@ -12908,7 +12899,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_UHCI0_INTR_MAP</name>
+          <name>UHCI0_INTR_MAP</name>
           <description>INTERRUPT_CORE0_UHCI0_INTR_MAP</description>
           <addressOffset>0x3c</addressOffset>
           <size>32</size>
@@ -12923,7 +12914,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_GPIO_INTERRUPT_PRO_MAP</name>
+          <name>GPIO_INTERRUPT_PRO_MAP</name>
           <description>INTERRUPT_CORE0_GPIO_INTERRUPT_PRO_MAP</description>
           <addressOffset>0x40</addressOffset>
           <size>32</size>
@@ -12938,7 +12929,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_GPIO_INTERRUPT_PRO_NMI_MAP</name>
+          <name>GPIO_INTERRUPT_PRO_NMI_MAP</name>
           <description>INTERRUPT_CORE0_GPIO_INTERRUPT_PRO_NMI_MAP</description>
           <addressOffset>0x44</addressOffset>
           <size>32</size>
@@ -12953,7 +12944,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_SPI_INTR_1_MAP</name>
+          <name>SPI_INTR_1_MAP</name>
           <description>INTERRUPT_CORE0_SPI_INTR_1_MAP</description>
           <addressOffset>0x48</addressOffset>
           <size>32</size>
@@ -12968,7 +12959,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_SPI_INTR_2_MAP</name>
+          <name>SPI_INTR_2_MAP</name>
           <description>INTERRUPT_CORE0_SPI_INTR_2_MAP</description>
           <addressOffset>0x4c</addressOffset>
           <size>32</size>
@@ -12983,7 +12974,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_I2S1_INT_MAP</name>
+          <name>I2S1_INT_MAP</name>
           <description>INTERRUPT_CORE0_I2S1_INT_MAP</description>
           <addressOffset>0x50</addressOffset>
           <size>32</size>
@@ -12998,7 +12989,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_UART_INTR_MAP</name>
+          <name>UART_INTR_MAP</name>
           <description>INTERRUPT_CORE0_UART_INTR_MAP</description>
           <addressOffset>0x54</addressOffset>
           <size>32</size>
@@ -13013,7 +13004,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_UART1_INTR_MAP</name>
+          <name>UART1_INTR_MAP</name>
           <description>INTERRUPT_CORE0_UART1_INTR_MAP</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
@@ -13028,7 +13019,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_LEDC_INT_MAP</name>
+          <name>LEDC_INT_MAP</name>
           <description>INTERRUPT_CORE0_LEDC_INT_MAP</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
@@ -13043,7 +13034,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_EFUSE_INT_MAP</name>
+          <name>EFUSE_INT_MAP</name>
           <description>INTERRUPT_CORE0_EFUSE_INT_MAP</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
@@ -13058,7 +13049,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CAN_INT_MAP</name>
+          <name>CAN_INT_MAP</name>
           <description>INTERRUPT_CORE0_CAN_INT_MAP</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
@@ -13073,7 +13064,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_USB_INTR_MAP</name>
+          <name>USB_INTR_MAP</name>
           <description>INTERRUPT_CORE0_USB_INTR_MAP</description>
           <addressOffset>0x68</addressOffset>
           <size>32</size>
@@ -13088,7 +13079,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_RTC_CORE_INTR_MAP</name>
+          <name>RTC_CORE_INTR_MAP</name>
           <description>INTERRUPT_CORE0_RTC_CORE_INTR_MAP</description>
           <addressOffset>0x6c</addressOffset>
           <size>32</size>
@@ -13103,7 +13094,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_RMT_INTR_MAP</name>
+          <name>RMT_INTR_MAP</name>
           <description>INTERRUPT_CORE0_RMT_INTR_MAP</description>
           <addressOffset>0x70</addressOffset>
           <size>32</size>
@@ -13118,7 +13109,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_I2C_EXT0_INTR_MAP</name>
+          <name>I2C_EXT0_INTR_MAP</name>
           <description>INTERRUPT_CORE0_I2C_EXT0_INTR_MAP</description>
           <addressOffset>0x74</addressOffset>
           <size>32</size>
@@ -13133,7 +13124,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_TIMER_INT1_MAP</name>
+          <name>TIMER_INT1_MAP</name>
           <description>INTERRUPT_CORE0_TIMER_INT1_MAP</description>
           <addressOffset>0x78</addressOffset>
           <size>32</size>
@@ -13148,7 +13139,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_TIMER_INT2_MAP</name>
+          <name>TIMER_INT2_MAP</name>
           <description>INTERRUPT_CORE0_TIMER_INT2_MAP</description>
           <addressOffset>0x7c</addressOffset>
           <size>32</size>
@@ -13163,7 +13154,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_TG_T0_INT_MAP</name>
+          <name>TG_T0_INT_MAP</name>
           <description>INTERRUPT_CORE0_TG_T0_INT_MAP</description>
           <addressOffset>0x80</addressOffset>
           <size>32</size>
@@ -13178,7 +13169,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_TG_WDT_INT_MAP</name>
+          <name>TG_WDT_INT_MAP</name>
           <description>INTERRUPT_CORE0_TG_WDT_INT_MAP</description>
           <addressOffset>0x84</addressOffset>
           <size>32</size>
@@ -13193,7 +13184,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_TG1_T0_INT_MAP</name>
+          <name>TG1_T0_INT_MAP</name>
           <description>INTERRUPT_CORE0_TG1_T0_INT_MAP</description>
           <addressOffset>0x88</addressOffset>
           <size>32</size>
@@ -13208,7 +13199,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_TG1_WDT_INT_MAP</name>
+          <name>TG1_WDT_INT_MAP</name>
           <description>INTERRUPT_CORE0_TG1_WDT_INT_MAP</description>
           <addressOffset>0x8c</addressOffset>
           <size>32</size>
@@ -13223,7 +13214,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CACHE_IA_INT_MAP</name>
+          <name>CACHE_IA_INT_MAP</name>
           <description>INTERRUPT_CORE0_CACHE_IA_INT_MAP</description>
           <addressOffset>0x90</addressOffset>
           <size>32</size>
@@ -13238,7 +13229,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_SYSTIMER_TARGET0_INT_MAP</name>
+          <name>SYSTIMER_TARGET0_INT_MAP</name>
           <description>INTERRUPT_CORE0_SYSTIMER_TARGET0_INT_MAP</description>
           <addressOffset>0x94</addressOffset>
           <size>32</size>
@@ -13253,7 +13244,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_SYSTIMER_TARGET1_INT_MAP</name>
+          <name>SYSTIMER_TARGET1_INT_MAP</name>
           <description>INTERRUPT_CORE0_SYSTIMER_TARGET1_INT_MAP</description>
           <addressOffset>0x98</addressOffset>
           <size>32</size>
@@ -13268,7 +13259,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_SYSTIMER_TARGET2_INT_MAP</name>
+          <name>SYSTIMER_TARGET2_INT_MAP</name>
           <description>INTERRUPT_CORE0_SYSTIMER_TARGET2_INT_MAP</description>
           <addressOffset>0x9c</addressOffset>
           <size>32</size>
@@ -13283,7 +13274,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_SPI_MEM_REJECT_INTR_MAP</name>
+          <name>SPI_MEM_REJECT_INTR_MAP</name>
           <description>INTERRUPT_CORE0_SPI_MEM_REJECT_INTR_MAP</description>
           <addressOffset>0xa0</addressOffset>
           <size>32</size>
@@ -13298,7 +13289,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_ICACHE_PRELOAD_INT_MAP</name>
+          <name>ICACHE_PRELOAD_INT_MAP</name>
           <description>INTERRUPT_CORE0_ICACHE_PRELOAD_INT_MAP</description>
           <addressOffset>0xa4</addressOffset>
           <size>32</size>
@@ -13313,7 +13304,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_ICACHE_SYNC_INT_MAP</name>
+          <name>ICACHE_SYNC_INT_MAP</name>
           <description>INTERRUPT_CORE0_ICACHE_SYNC_INT_MAP</description>
           <addressOffset>0xa8</addressOffset>
           <size>32</size>
@@ -13328,7 +13319,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_APB_ADC_INT_MAP</name>
+          <name>APB_ADC_INT_MAP</name>
           <description>INTERRUPT_CORE0_APB_ADC_INT_MAP</description>
           <addressOffset>0xac</addressOffset>
           <size>32</size>
@@ -13343,7 +13334,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_DMA_CH0_INT_MAP</name>
+          <name>DMA_CH0_INT_MAP</name>
           <description>INTERRUPT_CORE0_DMA_CH0_INT_MAP</description>
           <addressOffset>0xb0</addressOffset>
           <size>32</size>
@@ -13358,7 +13349,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_DMA_CH1_INT_MAP</name>
+          <name>DMA_CH1_INT_MAP</name>
           <description>INTERRUPT_CORE0_DMA_CH1_INT_MAP</description>
           <addressOffset>0xb4</addressOffset>
           <size>32</size>
@@ -13373,7 +13364,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_DMA_CH2_INT_MAP</name>
+          <name>DMA_CH2_INT_MAP</name>
           <description>INTERRUPT_CORE0_DMA_CH2_INT_MAP</description>
           <addressOffset>0xb8</addressOffset>
           <size>32</size>
@@ -13388,7 +13379,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_RSA_INT_MAP</name>
+          <name>RSA_INT_MAP</name>
           <description>INTERRUPT_CORE0_RSA_INT_MAP</description>
           <addressOffset>0xbc</addressOffset>
           <size>32</size>
@@ -13403,7 +13394,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_AES_INT_MAP</name>
+          <name>AES_INT_MAP</name>
           <description>INTERRUPT_CORE0_AES_INT_MAP</description>
           <addressOffset>0xc0</addressOffset>
           <size>32</size>
@@ -13418,7 +13409,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_SHA_INT_MAP</name>
+          <name>SHA_INT_MAP</name>
           <description>INTERRUPT_CORE0_SHA_INT_MAP</description>
           <addressOffset>0xc4</addressOffset>
           <size>32</size>
@@ -13433,7 +13424,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INTR_FROM_CPU_0_MAP</name>
+          <name>CPU_INTR_FROM_CPU_0_MAP</name>
           <description>INTERRUPT_CORE0_CPU_INTR_FROM_CPU_0_MAP</description>
           <addressOffset>0xc8</addressOffset>
           <size>32</size>
@@ -13448,7 +13439,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INTR_FROM_CPU_1_MAP</name>
+          <name>CPU_INTR_FROM_CPU_1_MAP</name>
           <description>INTERRUPT_CORE0_CPU_INTR_FROM_CPU_1_MAP</description>
           <addressOffset>0xcc</addressOffset>
           <size>32</size>
@@ -13463,7 +13454,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INTR_FROM_CPU_2_MAP</name>
+          <name>CPU_INTR_FROM_CPU_2_MAP</name>
           <description>INTERRUPT_CORE0_CPU_INTR_FROM_CPU_2_MAP</description>
           <addressOffset>0xd0</addressOffset>
           <size>32</size>
@@ -13478,7 +13469,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INTR_FROM_CPU_3_MAP</name>
+          <name>CPU_INTR_FROM_CPU_3_MAP</name>
           <description>INTERRUPT_CORE0_CPU_INTR_FROM_CPU_3_MAP</description>
           <addressOffset>0xd4</addressOffset>
           <size>32</size>
@@ -13493,7 +13484,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_ASSIST_DEBUG_INTR_MAP</name>
+          <name>ASSIST_DEBUG_INTR_MAP</name>
           <description>INTERRUPT_CORE0_ASSIST_DEBUG_INTR_MAP</description>
           <addressOffset>0xd8</addressOffset>
           <size>32</size>
@@ -13508,7 +13499,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_DMA_APBPERI_PMS_MONITOR_VIOLATE_INTR_MAP</name>
+          <name>DMA_APBPERI_PMS_MONITOR_VIOLATE_INTR_MAP</name>
           <description>INTERRUPT_CORE0_DMA_APBPERI_PMS_MONITOR_VIOLATE_INTR_MAP</description>
           <addressOffset>0xdc</addressOffset>
           <size>32</size>
@@ -13523,7 +13514,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CORE_0_IRAM0_PMS_MONITOR_VIOLATE_INTR_MAP</name>
+          <name>CORE_0_IRAM0_PMS_MONITOR_VIOLATE_INTR_MAP</name>
           <description>INTERRUPT_CORE0_CORE_0_IRAM0_PMS_MONITOR_VIOLATE_INTR_MAP</description>
           <addressOffset>0xe0</addressOffset>
           <size>32</size>
@@ -13538,7 +13529,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CORE_0_DRAM0_PMS_MONITOR_VIOLATE_INTR_MAP</name>
+          <name>CORE_0_DRAM0_PMS_MONITOR_VIOLATE_INTR_MAP</name>
           <description>INTERRUPT_CORE0_CORE_0_DRAM0_PMS_MONITOR_VIOLATE_INTR_MAP</description>
           <addressOffset>0xe4</addressOffset>
           <size>32</size>
@@ -13553,7 +13544,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CORE_0_PIF_PMS_MONITOR_VIOLATE_INTR_MAP</name>
+          <name>CORE_0_PIF_PMS_MONITOR_VIOLATE_INTR_MAP</name>
           <description>INTERRUPT_CORE0_CORE_0_PIF_PMS_MONITOR_VIOLATE_INTR_MAP</description>
           <addressOffset>0xe8</addressOffset>
           <size>32</size>
@@ -13568,7 +13559,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CORE_0_PIF_PMS_MONITOR_VIOLATE_SIZE_INTR_MAP</name>
+          <name>CORE_0_PIF_PMS_MONITOR_VIOLATE_SIZE_INTR_MAP</name>
           <description>INTERRUPT_CORE0_CORE_0_PIF_PMS_MONITOR_VIOLATE_SIZE_INTR_MAP</description>
           <addressOffset>0xec</addressOffset>
           <size>32</size>
@@ -13583,7 +13574,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_BACKUP_PMS_VIOLATE_INTR_MAP</name>
+          <name>BACKUP_PMS_VIOLATE_INTR_MAP</name>
           <description>INTERRUPT_CORE0_BACKUP_PMS_VIOLATE_INTR_MAP</description>
           <addressOffset>0xf0</addressOffset>
           <size>32</size>
@@ -13598,7 +13589,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CACHE_CORE0_ACS_INT_MAP</name>
+          <name>CACHE_CORE0_ACS_INT_MAP</name>
           <description>INTERRUPT_CORE0_CACHE_CORE0_ACS_INT_MAP</description>
           <addressOffset>0xf4</addressOffset>
           <size>32</size>
@@ -13613,7 +13604,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_INTR_STATUS_0</name>
+          <name>INTR_STATUS_0</name>
           <description>INTERRUPT_CORE0_INTR_STATUS_0</description>
           <addressOffset>0xf8</addressOffset>
           <size>32</size>
@@ -13628,7 +13619,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_INTR_STATUS_1</name>
+          <name>INTR_STATUS_1</name>
           <description>INTERRUPT_CORE0_INTR_STATUS_1</description>
           <addressOffset>0xfc</addressOffset>
           <size>32</size>
@@ -13643,7 +13634,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CLOCK_GATE</name>
+          <name>CLOCK_GATE</name>
           <description>INTERRUPT_CORE0_CLOCK_GATE</description>
           <addressOffset>0x100</addressOffset>
           <size>32</size>
@@ -13658,7 +13649,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_ENABLE</name>
+          <name>CPU_INT_ENABLE</name>
           <description>INTERRUPT_CORE0_CPU_INT_ENABLE</description>
           <addressOffset>0x104</addressOffset>
           <size>32</size>
@@ -13673,7 +13664,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_TYPE</name>
+          <name>CPU_INT_TYPE</name>
           <description>INTERRUPT_CORE0_CPU_INT_TYPE</description>
           <addressOffset>0x108</addressOffset>
           <size>32</size>
@@ -13688,7 +13679,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_CLEAR</name>
+          <name>CPU_INT_CLEAR</name>
           <description>INTERRUPT_CORE0_CPU_INT_CLEAR</description>
           <addressOffset>0x10c</addressOffset>
           <size>32</size>
@@ -13703,7 +13694,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_EIP_STATUS</name>
+          <name>CPU_INT_EIP_STATUS</name>
           <description>INTERRUPT_CORE0_CPU_INT_EIP_STATUS</description>
           <addressOffset>0x110</addressOffset>
           <size>32</size>
@@ -13718,7 +13709,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_0</name>
+          <name>CPU_INT_PRI_0</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_0</description>
           <addressOffset>0x114</addressOffset>
           <size>32</size>
@@ -13733,7 +13724,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_1</name>
+          <name>CPU_INT_PRI_1</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_1</description>
           <addressOffset>0x118</addressOffset>
           <size>32</size>
@@ -13748,7 +13739,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_2</name>
+          <name>CPU_INT_PRI_2</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_2</description>
           <addressOffset>0x11c</addressOffset>
           <size>32</size>
@@ -13763,7 +13754,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_3</name>
+          <name>CPU_INT_PRI_3</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_3</description>
           <addressOffset>0x120</addressOffset>
           <size>32</size>
@@ -13778,7 +13769,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_4</name>
+          <name>CPU_INT_PRI_4</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_4</description>
           <addressOffset>0x124</addressOffset>
           <size>32</size>
@@ -13793,7 +13784,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_5</name>
+          <name>CPU_INT_PRI_5</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_5</description>
           <addressOffset>0x128</addressOffset>
           <size>32</size>
@@ -13808,7 +13799,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_6</name>
+          <name>CPU_INT_PRI_6</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_6</description>
           <addressOffset>0x12c</addressOffset>
           <size>32</size>
@@ -13823,7 +13814,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_7</name>
+          <name>CPU_INT_PRI_7</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_7</description>
           <addressOffset>0x130</addressOffset>
           <size>32</size>
@@ -13838,7 +13829,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_8</name>
+          <name>CPU_INT_PRI_8</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_8</description>
           <addressOffset>0x134</addressOffset>
           <size>32</size>
@@ -13853,7 +13844,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_9</name>
+          <name>CPU_INT_PRI_9</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_9</description>
           <addressOffset>0x138</addressOffset>
           <size>32</size>
@@ -13868,7 +13859,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_10</name>
+          <name>CPU_INT_PRI_10</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_10</description>
           <addressOffset>0x13c</addressOffset>
           <size>32</size>
@@ -13883,7 +13874,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_11</name>
+          <name>CPU_INT_PRI_11</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_11</description>
           <addressOffset>0x140</addressOffset>
           <size>32</size>
@@ -13898,7 +13889,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_12</name>
+          <name>CPU_INT_PRI_12</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_12</description>
           <addressOffset>0x144</addressOffset>
           <size>32</size>
@@ -13913,7 +13904,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_13</name>
+          <name>CPU_INT_PRI_13</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_13</description>
           <addressOffset>0x148</addressOffset>
           <size>32</size>
@@ -13928,7 +13919,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_14</name>
+          <name>CPU_INT_PRI_14</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_14</description>
           <addressOffset>0x14c</addressOffset>
           <size>32</size>
@@ -13943,7 +13934,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_15</name>
+          <name>CPU_INT_PRI_15</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_15</description>
           <addressOffset>0x150</addressOffset>
           <size>32</size>
@@ -13958,7 +13949,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_16</name>
+          <name>CPU_INT_PRI_16</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_16</description>
           <addressOffset>0x154</addressOffset>
           <size>32</size>
@@ -13973,7 +13964,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_17</name>
+          <name>CPU_INT_PRI_17</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_17</description>
           <addressOffset>0x158</addressOffset>
           <size>32</size>
@@ -13988,7 +13979,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_18</name>
+          <name>CPU_INT_PRI_18</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_18</description>
           <addressOffset>0x15c</addressOffset>
           <size>32</size>
@@ -14003,7 +13994,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_19</name>
+          <name>CPU_INT_PRI_19</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_19</description>
           <addressOffset>0x160</addressOffset>
           <size>32</size>
@@ -14018,7 +14009,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_20</name>
+          <name>CPU_INT_PRI_20</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_20</description>
           <addressOffset>0x164</addressOffset>
           <size>32</size>
@@ -14033,7 +14024,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_21</name>
+          <name>CPU_INT_PRI_21</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_21</description>
           <addressOffset>0x168</addressOffset>
           <size>32</size>
@@ -14048,7 +14039,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_22</name>
+          <name>CPU_INT_PRI_22</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_22</description>
           <addressOffset>0x16c</addressOffset>
           <size>32</size>
@@ -14063,7 +14054,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_23</name>
+          <name>CPU_INT_PRI_23</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_23</description>
           <addressOffset>0x170</addressOffset>
           <size>32</size>
@@ -14078,7 +14069,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_24</name>
+          <name>CPU_INT_PRI_24</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_24</description>
           <addressOffset>0x174</addressOffset>
           <size>32</size>
@@ -14093,7 +14084,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_25</name>
+          <name>CPU_INT_PRI_25</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_25</description>
           <addressOffset>0x178</addressOffset>
           <size>32</size>
@@ -14108,7 +14099,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_26</name>
+          <name>CPU_INT_PRI_26</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_26</description>
           <addressOffset>0x17c</addressOffset>
           <size>32</size>
@@ -14123,7 +14114,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_27</name>
+          <name>CPU_INT_PRI_27</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_27</description>
           <addressOffset>0x180</addressOffset>
           <size>32</size>
@@ -14138,7 +14129,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_28</name>
+          <name>CPU_INT_PRI_28</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_28</description>
           <addressOffset>0x184</addressOffset>
           <size>32</size>
@@ -14153,7 +14144,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_29</name>
+          <name>CPU_INT_PRI_29</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_29</description>
           <addressOffset>0x188</addressOffset>
           <size>32</size>
@@ -14168,7 +14159,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_30</name>
+          <name>CPU_INT_PRI_30</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_30</description>
           <addressOffset>0x18c</addressOffset>
           <size>32</size>
@@ -14183,7 +14174,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_PRI_31</name>
+          <name>CPU_INT_PRI_31</name>
           <description>INTERRUPT_CORE0_CPU_INT_PRI_31</description>
           <addressOffset>0x190</addressOffset>
           <size>32</size>
@@ -14198,7 +14189,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_CPU_INT_THRESH</name>
+          <name>CPU_INT_THRESH</name>
           <description>INTERRUPT_CORE0_CPU_INT_THRESH</description>
           <addressOffset>0x194</addressOffset>
           <size>32</size>
@@ -14213,7 +14204,7 @@
           </fields>
         </register>
         <register>
-          <name>INTERRUPT_CORE0_INTERRUPT_DATE</name>
+          <name>INTERRUPT_DATE</name>
           <description>INTERRUPT_CORE0_INTERRUPT_DATE</description>
           <addressOffset>0x7fc</addressOffset>
           <size>32</size>
@@ -32767,6 +32758,10 @@
     <peripheral derivedFrom="UART">
       <name>UART0</name>
       <baseAddress>0x60000000</baseAddress>
+    </peripheral>
+    <peripheral derivedFrom="INTERRUPT_CORE0">
+      <name>INTERRUPT</name>
+      <baseAddress>0x600c2000</baseAddress>
     </peripheral>
     <peripheral>
       <name>IO_MUX</name>

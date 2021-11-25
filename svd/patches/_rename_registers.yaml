@@ -49,7 +49,7 @@ I2S:
 
 INTERRUPT_CORE0:
   _strip:
-    - INTERUPT_CORE0_
+    - INTERRUPT_CORE0_
 
 LEDC:
   _strip:

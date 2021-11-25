@@ -932,6 +932,32 @@ impl core::fmt::Debug for UART0 {
         f.debug_struct("UART0").finish()
     }
 }
+#[doc = "INTERRUPT"]
+pub struct INTERRUPT {
+    _marker: PhantomData<*const ()>,
+}
+unsafe impl Send for INTERRUPT {}
+impl INTERRUPT {
+    #[doc = r"Pointer to the register block"]
+    pub const PTR: *const interrupt_core0::RegisterBlock = 0x600c_2000 as *const _;
+    #[doc = r"Return the pointer to the register block"]
+    #[inline(always)]
+    pub const fn ptr() -> *const interrupt_core0::RegisterBlock {
+        Self::PTR
+    }
+}
+impl Deref for INTERRUPT {
+    type Target = interrupt_core0::RegisterBlock;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        unsafe { &*Self::PTR }
+    }
+}
+impl core::fmt::Debug for INTERRUPT {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("INTERRUPT").finish()
+    }
+}
 #[doc = "IO Multiplexer"]
 pub struct IO_MUX {
     _marker: PhantomData<*const ()>,
@@ -1031,6 +1057,8 @@ pub struct Peripherals {
     pub UHCI0: UHCI0,
     #[doc = "UART0"]
     pub UART0: UART0,
+    #[doc = "INTERRUPT"]
+    pub INTERRUPT: INTERRUPT,
     #[doc = "IO_MUX"]
     pub IO_MUX: IO_MUX,
 }
@@ -1148,6 +1176,9 @@ impl Peripherals {
                 _marker: PhantomData,
             },
             UART0: UART0 {
+                _marker: PhantomData,
+            },
+            INTERRUPT: INTERRUPT {
                 _marker: PhantomData,
             },
             IO_MUX: IO_MUX {

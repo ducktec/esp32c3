@@ -9,6 +9,9 @@ _include:
   - "_rename_registers.yaml"
   - "_rename_bitfields.yaml"
 
+_delete:
+  INTERRUPT:
+
 _modify:
   I2C_EXT:
     name: I2C0
@@ -21,6 +24,9 @@ _add:
   UART0:
     derivedFrom: UART
     baseAddress: "0x60000000"
+  INTERRUPT:
+    derivedFrom: INTERRUPT_CORE0
+    baseAddress: "0x600c2000"
 
 _derive:
   TIMG0: TIMG
